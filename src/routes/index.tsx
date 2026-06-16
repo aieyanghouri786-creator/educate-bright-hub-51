@@ -250,14 +250,14 @@ function Home() {
         </div>
       </section>
 
-      {/* For Students — split */}
+      {/* For Students & Families — split */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-gradient-soft" />
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 lg:grid-cols-2">
           <div className="lg:order-2 relative">
             <img
               src={students}
-              alt="Students learning with Smart Campuses"
+              alt="Students and families connected through Smart Campus"
               loading="lazy"
               width={1024}
               height={1024}
@@ -269,13 +269,14 @@ function Home() {
             </div>
           </div>
           <div>
-            <SectionEyebrow>For students</SectionEyebrow>
+            <SectionEyebrow>For students & families</SectionEyebrow>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-              A learning experience <span className="text-gradient-brand">they actually love.</span>
+              Connected learning <span className="text-gradient-brand">in real time.</span>
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Live classes, video lectures, assignments, quizzes and certificates —
-              accessible from any device, online or offline, in 9 languages.
+              Our cloud-based LMS bridges the gap between faculty, students and families through
+              integrated communication tools and dedicated student & parent portals. Everyone stays
+              informed, connected and engaged — from any device, online or offline.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-4">
               {[
