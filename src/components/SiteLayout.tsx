@@ -237,7 +237,7 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2.6fr]">
           <div>
-            <img src={logo.url} alt="Smart Campuses" className="h-10 w-auto rounded-md bg-white/95 p-1" />
+            <img src={logo.url} alt="Smart Campuses" className="h-10 w-auto brightness-0 invert" />
             <p className="mt-4 max-w-xs text-sm text-secondary-foreground/70">
               Cloud-based ERP & LMS purpose-built for modern educational institutions.
             </p>
