@@ -128,7 +128,7 @@ function Home() {
             </dl>
           </div>
 
-          <div className="relative animate-scale-in delay-200">
+          <div className="relative animate-scale-in delay-200 lg:order-1">
             <div className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-gradient-soft blur-2xl" />
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-elegant animate-float">
               <img src={hero} alt="Smart Campuses platform dashboards" className="h-auto w-full" width={1280} height={1024} />
