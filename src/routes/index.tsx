@@ -10,6 +10,7 @@ import hero from "@/assets/hero.jpg";
 import students from "@/assets/students.jpg";
 import teacher from "@/assets/teacher.jpg";
 import campus from "@/assets/campus.jpg";
+import heroBg from "@/assets/hero-bg.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
