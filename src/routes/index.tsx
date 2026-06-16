@@ -10,6 +10,7 @@ import hero from "@/assets/hero.jpg";
 import students from "@/assets/students.jpg";
 import teacher from "@/assets/teacher.jpg";
 import campus from "@/assets/campus.jpg";
+import heroBg from "@/assets/hero-bg.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -79,12 +80,25 @@ function Home() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-hero-glow">
+        {/* background video */}
+        <video
+          src={heroBg.url}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover opacity-30"
+        />
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-background/70 via-background/85 to-background" />
+
         {/* animated colored blobs */}
         <div className="pointer-events-none absolute -top-32 -left-20 h-[28rem] w-[28rem] rounded-full bg-[color:var(--brand)]/25 blur-3xl animate-blob" />
         <div className="pointer-events-none absolute top-20 right-0 h-[26rem] w-[26rem] rounded-full bg-[color:var(--ink)]/25 blur-3xl animate-blob delay-300" />
 
-        <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 py-24 md:py-32 lg:grid-cols-[1.1fr_1fr]">
-          <div>
+        <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 py-24 md:py-32 lg:grid-cols-[1fr_1.1fr]">
+          <div className="lg:order-2">
             <div className="animate-fade-up">
               <SectionEyebrow>Cloud UMS · LMS · Analytics</SectionEyebrow>
             </div>
@@ -114,7 +128,7 @@ function Home() {
             </dl>
           </div>
 
-          <div className="relative animate-scale-in delay-200">
+          <div className="relative animate-scale-in delay-200 lg:order-1">
             <div className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-gradient-soft blur-2xl" />
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-elegant animate-float">
               <img src={hero} alt="Smart Campuses platform dashboards" className="h-auto w-full" width={1280} height={1024} />
