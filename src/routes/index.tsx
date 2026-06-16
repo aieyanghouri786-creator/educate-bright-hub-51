@@ -179,14 +179,14 @@ function Home() {
         </div>
       </section>
 
-      {/* For Teachers — image split */}
+      {/* For Faculty — image split */}
       <section className="border-y border-border bg-muted/40">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 lg:grid-cols-2">
           <div className="relative">
             <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-soft blur-xl" />
             <img
               src={teacher}
-              alt="Teacher using Smart Campuses in classroom"
+              alt="Faculty using Smart Campus in classroom"
               loading="lazy"
               width={1024}
               height={1024}
@@ -200,21 +200,21 @@ function Home() {
             </div>
           </div>
           <div>
-            <SectionEyebrow>For teachers</SectionEyebrow>
+            <SectionEyebrow>For faculty & administrators</SectionEyebrow>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-              Less admin work. <span className="text-gradient-brand">More teaching.</span>
+              Less admin work. <span className="text-gradient-brand">More focus on students.</span>
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Mark attendance in under 30 seconds, send homework to a class in a tap,
-              grade with rubrics that remember your style, and message parents without
-              switching apps.
+              Smart Campus frees educators to focus on student success rather than paperwork.
+              Mark attendance in seconds, distribute assignments instantly, grade with smart
+              rubrics, and keep parents informed — all from one intuitive interface.
             </p>
             <ul className="mt-8 space-y-3 text-sm">
               {[
-                "Mobile-first teacher app with offline mode",
-                "Rich gradebook with rubric-based grading",
-                "1-tap parent communication with translation",
-                "Lesson plan library shared across the department",
+                "Mobile-first faculty app with offline mode",
+                "Smart gradebook with automated report cards",
+                "Instant parent communication with real-time updates",
+                "Lesson plan library shared across departments",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3">
                   <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-brand" />
@@ -223,7 +223,7 @@ function Home() {
               ))}
             </ul>
             <div className="mt-8">
-              <BrandButton to="/features/teacher-portal">Explore Teacher Portal</BrandButton>
+              <BrandButton to="/features/teacher-portal">Explore Faculty Portal</BrandButton>
             </div>
           </div>
         </div>
@@ -232,12 +232,13 @@ function Home() {
       {/* Core features */}
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="max-w-2xl">
-          <SectionEyebrow>Core modules</SectionEyebrow>
+          <SectionEyebrow>50+ Feature-rich modules</SectionEyebrow>
           <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-            Everything your campus runs on.
+            Everything your institution needs.
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Ten deeply integrated modules built for K-12, higher education and training institutes.
+            From automated report cards and fee management to attendance tracking and parent
+            engagement portals — built for K-12, higher education and training institutes across Finland.
           </p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
