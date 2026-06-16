@@ -14,10 +14,10 @@ import campus from "@/assets/campus.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Smart Campuses — Cloud ERP & LMS for Modern Institutions" },
-      { name: "description", content: "Transform your school, college or university with a unified ERP and LMS for admissions, attendance, fees, exams, communication and learning." },
-      { property: "og:title", content: "Smart Campuses — Cloud ERP & LMS" },
-      { property: "og:description", content: "One platform for admissions, academics, attendance, fees, exams and learning." },
+      { title: "Smart Campus — Finland's #1 University Management System" },
+      { name: "description", content: "All-in-one cloud-based UMS & LMS for schools, colleges and universities in Finland. 50+ modules, 24/7 support, and an intuitive platform built for modern education." },
+      { property: "og:title", content: "Smart Campus — Finland's #1 Education Management System" },
+      { property: "og:description", content: "50+ feature-rich modules. 24/7 support. One platform for every device. Trusted across Finland." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -26,10 +26,10 @@ export const Route = createFileRoute("/")({
 });
 
 const benefits = [
-  { icon: Cloud, title: "Cloud Based", description: "Access your institution anytime, anywhere with secure cloud technology." },
-  { icon: ShieldCheck, title: "Secure & Reliable", description: "Enterprise-grade security with continuous backups and role-based access." },
-  { icon: Users, title: "User Friendly", description: "Intuitive for administrators, teachers, students and parents alike." },
-  { icon: Layers, title: "Scalable", description: "From a single school to multi-campus universities and academies." },
+  { icon: Cloud, title: "Cloud Based", description: "Access your institution anytime, anywhere with secure cloud technology built for Finland." },
+  { icon: ShieldCheck, title: "Secure & Reliable", description: "Enterprise-grade security with continuous backups, GDPR compliance and role-based access." },
+  { icon: Users, title: "User Friendly", description: "Intuitive for administrators, faculty, students and parents — no technical expertise required." },
+  { icon: Layers, title: "50+ Modules", description: "From admissions and attendance to parent portals and automated report cards — fully scalable." },
 ];
 
 const features = [
@@ -37,18 +37,18 @@ const features = [
   { icon: ClipboardList, title: "Admission Management", description: "Digitize admissions from inquiry to enrollment with paperless workflows." },
   { icon: CalendarCheck, title: "Attendance Tracking", description: "Monitor student and staff attendance in real time with automated alerts." },
   { icon: Wallet, title: "Fee Management", description: "Automate fee collection, invoicing, receipts and payment reconciliation." },
-  { icon: BookOpen, title: "Examination Management", description: "Conduct exams, generate report cards and track academic performance." },
+  { icon: BookOpen, title: "Automated Report Cards", description: "Generate report cards instantly with grades, remarks and performance summaries." },
   { icon: Laptop, title: "Learning Management", description: "Upload lectures, assignments, quizzes and run online assessments." },
-  { icon: Bell, title: "Parent Portal", description: "Keep parents informed with instant updates, notifications and reports." },
-  { icon: UserCog, title: "Faculty Portal", description: "Empower teachers with digital classroom management tools." },
+  { icon: Bell, title: "Parent Engagement Portal", description: "Keep parents informed with instant updates, fee alerts, attendance and results." },
+  { icon: UserCog, title: "Faculty Portal", description: "Empower teachers with digital classroom management and progress tracking tools." },
   { icon: Briefcase, title: "HR & Payroll", description: "Manage employee records, salaries, attendance and leave requests." },
-  { icon: BarChart3, title: "Reporting & Analytics", description: "Powerful dashboards and detailed reports for confident decisions." },
+  { icon: BarChart3, title: "Reporting & Analytics", description: "Powerful dashboards and detailed reports for confident, data-driven decisions." },
 ];
 
 const solutionsCards = [
-  { icon: School, title: "Schools", to: "/solutions/schools", description: "K-12 schools that want a single, branded platform for academics, parents and teachers." },
+  { icon: School, title: "Schools", to: "/solutions/schools", description: "K-12 schools across Finland that want a single platform for academics, parents and teachers." },
   { icon: Building2, title: "Colleges", to: "/solutions/colleges", description: "Single and affiliated colleges running admissions, academics and examinations at scale." },
-  { icon: Landmark, title: "Universities", to: "/solutions/universities", description: "Multi-faculty universities consolidating ERP, LMS, research and alumni." },
+  { icon: Landmark, title: "Universities", to: "/solutions/universities", description: "Multi-faculty universities consolidating ERP, LMS, research and alumni management." },
   { icon: BookMarked, title: "Training Institutes", to: "/solutions/training-institutes", description: "Vocational and professional training providers running batches and certifications." },
   { icon: Network, title: "Multi-Campus", to: "/solutions/multi-campus", description: "Networks of campuses with central control and branch-level autonomy." },
 ];
@@ -56,14 +56,14 @@ const solutionsCards = [
 const stats = [
   ["500+", "Institutions"],
   ["1.2M", "Students served"],
-  ["18", "Countries"],
+  ["50+", "Modules"],
   ["99.98%", "Uptime"],
 ];
 
 const testimonials = [
-  { quote: "Our administrative workload decreased significantly after implementing Smart Campuses.", name: "Dr. Anika Sharma", role: "Principal, Greenfield International School" },
-  { quote: "The LMS and communication tools dramatically improved engagement between teachers and parents.", name: "Prof. Rohan Mehta", role: "Academic Director, Skyline College" },
-  { quote: "Reporting and analytics give us valuable insights for confident, data-driven decisions.", name: "Vikram Patel", role: "University Administrator, Northridge University" },
+  { quote: "Our administrative workload decreased significantly after implementing Smart Campus. The 24/7 support team is exceptional.", name: "Dr. Liisa Mäkinen", role: "Principal, Helsinki International School" },
+  { quote: "The LMS and parent engagement portal dramatically improved communication between teachers and families across our campus.", name: "Prof. Juhani Korhonen", role: "Academic Director, Tampere Polytechnic" },
+  { quote: "Choosing the right University Management System in Finland transformed how we operate. Smart Campus solved our biggest operational challenges.", name: "Aino Virtanen", role: "University Administrator, Oulu University of Applied Sciences" },
 ];
 
 const latestPosts = [
@@ -72,7 +72,7 @@ const latestPosts = [
   { slug: "digital-transformation-in-higher-education", title: "Digital transformation in higher education", category: "Higher Education", date: "1 Jun 2026" },
 ];
 
-const trustLogos = ["Greenfield Intl.", "Skyline College", "Northridge University", "Horizon Academy", "Riverside School", "Crestwood Group"];
+const trustLogos = ["Helsinki International School", "Tampere Polytechnic", "Oulu University of Applied Sciences", "Turku Academy", "Espoo High School", "Vaasa College Group"];
 
 function Home() {
   return (
@@ -86,16 +86,17 @@ function Home() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 py-24 md:py-32 lg:grid-cols-[1.1fr_1fr]">
           <div>
             <div className="animate-fade-up">
-              <SectionEyebrow>Cloud ERP · LMS · Analytics</SectionEyebrow>
+              <SectionEyebrow>Cloud UMS · LMS · Analytics</SectionEyebrow>
             </div>
             <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl animate-fade-up delay-100">
-              Smart education <br />
-              <span className="text-gradient-brand">for modern institutions.</span>
+              Smart Education <br />
+              <span className="text-gradient-brand">Management for Modern Institutions</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground animate-fade-up delay-200">
-              Transform your school, college, university or training institute with a powerful
-              cloud-based ERP and Learning Management System. One platform for admissions,
-              attendance, academics, examinations, fees, communication and administration.
+              Transform your school, college or university with an all-in-one cloud-based
+              University Management System. With 50+ feature-rich modules covering everything
+              from automated report cards and fee management to attendance tracking and parent
+              engagement portals — all at an affordable price.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4 animate-fade-up delay-300">
               <BrandButton to="/contact">
@@ -156,15 +157,17 @@ function Home() {
           <div>
             <SectionEyebrow>Why choose us</SectionEyebrow>
             <h2 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight md:text-5xl">
-              One platform. <span className="text-gradient-brand">Unlimited possibilities.</span>
+              One platform. <span className="text-gradient-brand">Every device.</span>
             </h2>
             <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-              Smart Campuses automates administration while strengthening communication
-              between management, teachers, students and parents.
+              Smart Campus automates administration while strengthening real-time communication
+              between administrators, faculty, students and parents. Our cloud-based Academic
+              Management Software solves your biggest operational challenges through intelligent
+              automation and seamless integrations.
             </p>
           </div>
           <Link to="/features" className="story-link hidden text-sm font-semibold text-brand md:inline-flex">
-            Explore all features →
+            Explore all 50+ modules →
           </Link>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
