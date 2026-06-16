@@ -10,17 +10,107 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TestimonialsRouteImport } from './routes/testimonials'
+import { Route as SupportRouteImport } from './routes/support'
 import { Route as SolutionsRouteImport } from './routes/solutions'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as LeadershipRouteImport } from './routes/leadership'
+import { Route as KnowledgeBaseRouteImport } from './routes/knowledge-base'
 import { Route as FeaturesRouteImport } from './routes/features'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CaseStudiesRouteImport } from './routes/case-studies'
+import { Route as CareersRouteImport } from './routes/careers'
+import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as TestimonialsUniversitiesRouteImport } from './routes/testimonials.universities'
+import { Route as TestimonialsSchoolsRouteImport } from './routes/testimonials.schools'
+import { Route as TestimonialsCollegesRouteImport } from './routes/testimonials.colleges'
+import { Route as SupportSystemStatusRouteImport } from './routes/support.system-status'
+import { Route as SupportSubmitTicketRouteImport } from './routes/support.submit-ticket'
+import { Route as SupportRemoteAssistanceRouteImport } from './routes/support.remote-assistance'
+import { Route as SupportHelpCenterRouteImport } from './routes/support.help-center'
+import { Route as SupportContactSupportRouteImport } from './routes/support.contact-support'
+import { Route as SolutionsUniversitiesRouteImport } from './routes/solutions.universities'
+import { Route as SolutionsTrainingInstitutesRouteImport } from './routes/solutions.training-institutes'
+import { Route as SolutionsSchoolsRouteImport } from './routes/solutions.schools'
+import { Route as SolutionsMultiCampusRouteImport } from './routes/solutions.multi-campus'
+import { Route as SolutionsCollegesRouteImport } from './routes/solutions.colleges'
+import { Route as ProductsLmsRouteImport } from './routes/products.lms'
+import { Route as ProductsErpRouteImport } from './routes/products.erp'
+import { Route as PricingStarterRouteImport } from './routes/pricing.starter'
+import { Route as PricingProfessionalRouteImport } from './routes/pricing.professional'
+import { Route as PricingEnterpriseRouteImport } from './routes/pricing.enterprise'
+import { Route as LegalTermsRouteImport } from './routes/legal.terms'
+import { Route as LegalRefundPolicyRouteImport } from './routes/legal.refund-policy'
+import { Route as LegalPrivacyRouteImport } from './routes/legal.privacy'
+import { Route as LegalDataSecurityRouteImport } from './routes/legal.data-security'
+import { Route as LegalCookiePolicyRouteImport } from './routes/legal.cookie-policy'
+import { Route as KnowledgeBaseVideoTutorialsRouteImport } from './routes/knowledge-base.video-tutorials'
+import { Route as KnowledgeBaseUserGuidesRouteImport } from './routes/knowledge-base.user-guides'
+import { Route as KnowledgeBaseGettingStartedRouteImport } from './routes/knowledge-base.getting-started'
+import { Route as KnowledgeBaseFaqsRouteImport } from './routes/knowledge-base.faqs'
+import { Route as KnowledgeBaseDocumentationRouteImport } from './routes/knowledge-base.documentation'
+import { Route as FeaturesTeacherPortalRouteImport } from './routes/features.teacher-portal'
+import { Route as FeaturesStudentManagementRouteImport } from './routes/features.student-management'
+import { Route as FeaturesParentPortalRouteImport } from './routes/features.parent-portal'
+import { Route as FeaturesAnalyticsRouteImport } from './routes/features.analytics'
+import { Route as ContactScheduleDemoRouteImport } from './routes/contact.schedule-demo'
+import { Route as ContactRequestPricingRouteImport } from './routes/contact.request-pricing'
+import { Route as ContactBookConsultationRouteImport } from './routes/contact.book-consultation'
+import { Route as CaseStudiesUniversityTransformationRouteImport } from './routes/case-studies.university-transformation'
+import { Route as CaseStudiesSchoolSuccessStoryRouteImport } from './routes/case-studies.school-success-story'
+import { Route as CaseStudiesMultiCampusDeploymentRouteImport } from './routes/case-studies.multi-campus-deployment'
+import { Route as CareersApplyRouteImport } from './routes/careers.apply'
+import { Route as BlogSchoolManagementRouteImport } from './routes/blog.school-management'
+import { Route as BlogLmsTrendsRouteImport } from './routes/blog.lms-trends'
+import { Route as BlogHowErpImprovesSchoolManagementRouteImport } from './routes/blog.how-erp-improves-school-management'
+import { Route as BlogHigherEducationRouteImport } from './routes/blog.higher-education'
+import { Route as BlogErpSolutionsRouteImport } from './routes/blog.erp-solutions'
+import { Route as BlogEducationTechnologyRouteImport } from './routes/blog.education-technology'
+import { Route as BlogDigitalTransformationInHigherEducationRouteImport } from './routes/blog.digital-transformation-in-higher-education'
+import { Route as BlogDigitalTransformationRouteImport } from './routes/blog.digital-transformation'
+import { Route as BlogChoosingAnLmsForYourCollegeRouteImport } from './routes/blog.choosing-an-lms-for-your-college'
+import { Route as ProductsLmsVideoLearningRouteImport } from './routes/products.lms.video-learning'
+import { Route as ProductsLmsQuizzesRouteImport } from './routes/products.lms.quizzes'
+import { Route as ProductsLmsProgressTrackingRouteImport } from './routes/products.lms.progress-tracking'
+import { Route as ProductsLmsOnlineClassesRouteImport } from './routes/products.lms.online-classes'
+import { Route as ProductsLmsCourseManagementRouteImport } from './routes/products.lms.course-management'
+import { Route as ProductsLmsCertificatesRouteImport } from './routes/products.lms.certificates'
+import { Route as ProductsLmsAssignmentsRouteImport } from './routes/products.lms.assignments'
+import { Route as ProductsErpTransportRouteImport } from './routes/products.erp.transport'
+import { Route as ProductsErpStudentInformationRouteImport } from './routes/products.erp.student-information'
+import { Route as ProductsErpLibraryRouteImport } from './routes/products.erp.library'
+import { Route as ProductsErpHrPayrollRouteImport } from './routes/products.erp.hr-payroll'
+import { Route as ProductsErpHostelRouteImport } from './routes/products.erp.hostel'
+import { Route as ProductsErpFeesRouteImport } from './routes/products.erp.fees'
+import { Route as ProductsErpExaminationsRouteImport } from './routes/products.erp.examinations'
+import { Route as ProductsErpAttendanceRouteImport } from './routes/products.erp.attendance'
+import { Route as ProductsErpAdmissionsRouteImport } from './routes/products.erp.admissions'
+import { Route as FeaturesTeacherPortalReportsRouteImport } from './routes/features.teacher-portal.reports'
+import { Route as FeaturesTeacherPortalClassManagementRouteImport } from './routes/features.teacher-portal.class-management'
+import { Route as FeaturesTeacherPortalAttendanceRouteImport } from './routes/features.teacher-portal.attendance'
+import { Route as FeaturesTeacherPortalAssignmentsRouteImport } from './routes/features.teacher-portal.assignments'
+import { Route as FeaturesStudentManagementProfilesRouteImport } from './routes/features.student-management.profiles'
+import { Route as FeaturesStudentManagementParentInfoRouteImport } from './routes/features.student-management.parent-info'
+import { Route as FeaturesStudentManagementDocumentsRouteImport } from './routes/features.student-management.documents'
+import { Route as FeaturesStudentManagementAcademicRecordsRouteImport } from './routes/features.student-management.academic-records'
+import { Route as FeaturesParentPortalResultsRouteImport } from './routes/features.parent-portal.results'
+import { Route as FeaturesParentPortalFeePaymentsRouteImport } from './routes/features.parent-portal.fee-payments'
+import { Route as FeaturesParentPortalCommunicationRouteImport } from './routes/features.parent-portal.communication'
+import { Route as FeaturesParentPortalAttendanceRouteImport } from './routes/features.parent-portal.attendance'
+import { Route as FeaturesAnalyticsReportsRouteImport } from './routes/features.analytics.reports'
+import { Route as FeaturesAnalyticsKpisRouteImport } from './routes/features.analytics.kpis'
+import { Route as FeaturesAnalyticsInsightsRouteImport } from './routes/features.analytics.insights'
 
 const TestimonialsRoute = TestimonialsRouteImport.update({
   id: '/testimonials',
   path: '/testimonials',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupportRoute = SupportRouteImport.update({
+  id: '/support',
+  path: '/support',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SolutionsRoute = SolutionsRouteImport.update({
@@ -38,6 +128,16 @@ const PricingRoute = PricingRouteImport.update({
   path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LeadershipRoute = LeadershipRouteImport.update({
+  id: '/leadership',
+  path: '/leadership',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KnowledgeBaseRoute = KnowledgeBaseRouteImport.update({
+  id: '/knowledge-base',
+  path: '/knowledge-base',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FeaturesRoute = FeaturesRouteImport.update({
   id: '/features',
   path: '/features',
@@ -46,6 +146,21 @@ const FeaturesRoute = FeaturesRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CaseStudiesRoute = CaseStudiesRouteImport.update({
+  id: '/case-studies',
+  path: '/case-studies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CareersRoute = CareersRouteImport.update({
+  id: '/careers',
+  path: '/careers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -58,80 +173,1030 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TestimonialsUniversitiesRoute =
+  TestimonialsUniversitiesRouteImport.update({
+    id: '/universities',
+    path: '/universities',
+    getParentRoute: () => TestimonialsRoute,
+  } as any)
+const TestimonialsSchoolsRoute = TestimonialsSchoolsRouteImport.update({
+  id: '/schools',
+  path: '/schools',
+  getParentRoute: () => TestimonialsRoute,
+} as any)
+const TestimonialsCollegesRoute = TestimonialsCollegesRouteImport.update({
+  id: '/colleges',
+  path: '/colleges',
+  getParentRoute: () => TestimonialsRoute,
+} as any)
+const SupportSystemStatusRoute = SupportSystemStatusRouteImport.update({
+  id: '/system-status',
+  path: '/system-status',
+  getParentRoute: () => SupportRoute,
+} as any)
+const SupportSubmitTicketRoute = SupportSubmitTicketRouteImport.update({
+  id: '/submit-ticket',
+  path: '/submit-ticket',
+  getParentRoute: () => SupportRoute,
+} as any)
+const SupportRemoteAssistanceRoute = SupportRemoteAssistanceRouteImport.update({
+  id: '/remote-assistance',
+  path: '/remote-assistance',
+  getParentRoute: () => SupportRoute,
+} as any)
+const SupportHelpCenterRoute = SupportHelpCenterRouteImport.update({
+  id: '/help-center',
+  path: '/help-center',
+  getParentRoute: () => SupportRoute,
+} as any)
+const SupportContactSupportRoute = SupportContactSupportRouteImport.update({
+  id: '/contact-support',
+  path: '/contact-support',
+  getParentRoute: () => SupportRoute,
+} as any)
+const SolutionsUniversitiesRoute = SolutionsUniversitiesRouteImport.update({
+  id: '/universities',
+  path: '/universities',
+  getParentRoute: () => SolutionsRoute,
+} as any)
+const SolutionsTrainingInstitutesRoute =
+  SolutionsTrainingInstitutesRouteImport.update({
+    id: '/training-institutes',
+    path: '/training-institutes',
+    getParentRoute: () => SolutionsRoute,
+  } as any)
+const SolutionsSchoolsRoute = SolutionsSchoolsRouteImport.update({
+  id: '/schools',
+  path: '/schools',
+  getParentRoute: () => SolutionsRoute,
+} as any)
+const SolutionsMultiCampusRoute = SolutionsMultiCampusRouteImport.update({
+  id: '/multi-campus',
+  path: '/multi-campus',
+  getParentRoute: () => SolutionsRoute,
+} as any)
+const SolutionsCollegesRoute = SolutionsCollegesRouteImport.update({
+  id: '/colleges',
+  path: '/colleges',
+  getParentRoute: () => SolutionsRoute,
+} as any)
+const ProductsLmsRoute = ProductsLmsRouteImport.update({
+  id: '/products/lms',
+  path: '/products/lms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsErpRoute = ProductsErpRouteImport.update({
+  id: '/products/erp',
+  path: '/products/erp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingStarterRoute = PricingStarterRouteImport.update({
+  id: '/starter',
+  path: '/starter',
+  getParentRoute: () => PricingRoute,
+} as any)
+const PricingProfessionalRoute = PricingProfessionalRouteImport.update({
+  id: '/professional',
+  path: '/professional',
+  getParentRoute: () => PricingRoute,
+} as any)
+const PricingEnterpriseRoute = PricingEnterpriseRouteImport.update({
+  id: '/enterprise',
+  path: '/enterprise',
+  getParentRoute: () => PricingRoute,
+} as any)
+const LegalTermsRoute = LegalTermsRouteImport.update({
+  id: '/legal/terms',
+  path: '/legal/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalRefundPolicyRoute = LegalRefundPolicyRouteImport.update({
+  id: '/legal/refund-policy',
+  path: '/legal/refund-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalPrivacyRoute = LegalPrivacyRouteImport.update({
+  id: '/legal/privacy',
+  path: '/legal/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalDataSecurityRoute = LegalDataSecurityRouteImport.update({
+  id: '/legal/data-security',
+  path: '/legal/data-security',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalCookiePolicyRoute = LegalCookiePolicyRouteImport.update({
+  id: '/legal/cookie-policy',
+  path: '/legal/cookie-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KnowledgeBaseVideoTutorialsRoute =
+  KnowledgeBaseVideoTutorialsRouteImport.update({
+    id: '/video-tutorials',
+    path: '/video-tutorials',
+    getParentRoute: () => KnowledgeBaseRoute,
+  } as any)
+const KnowledgeBaseUserGuidesRoute = KnowledgeBaseUserGuidesRouteImport.update({
+  id: '/user-guides',
+  path: '/user-guides',
+  getParentRoute: () => KnowledgeBaseRoute,
+} as any)
+const KnowledgeBaseGettingStartedRoute =
+  KnowledgeBaseGettingStartedRouteImport.update({
+    id: '/getting-started',
+    path: '/getting-started',
+    getParentRoute: () => KnowledgeBaseRoute,
+  } as any)
+const KnowledgeBaseFaqsRoute = KnowledgeBaseFaqsRouteImport.update({
+  id: '/faqs',
+  path: '/faqs',
+  getParentRoute: () => KnowledgeBaseRoute,
+} as any)
+const KnowledgeBaseDocumentationRoute =
+  KnowledgeBaseDocumentationRouteImport.update({
+    id: '/documentation',
+    path: '/documentation',
+    getParentRoute: () => KnowledgeBaseRoute,
+  } as any)
+const FeaturesTeacherPortalRoute = FeaturesTeacherPortalRouteImport.update({
+  id: '/teacher-portal',
+  path: '/teacher-portal',
+  getParentRoute: () => FeaturesRoute,
+} as any)
+const FeaturesStudentManagementRoute =
+  FeaturesStudentManagementRouteImport.update({
+    id: '/student-management',
+    path: '/student-management',
+    getParentRoute: () => FeaturesRoute,
+  } as any)
+const FeaturesParentPortalRoute = FeaturesParentPortalRouteImport.update({
+  id: '/parent-portal',
+  path: '/parent-portal',
+  getParentRoute: () => FeaturesRoute,
+} as any)
+const FeaturesAnalyticsRoute = FeaturesAnalyticsRouteImport.update({
+  id: '/analytics',
+  path: '/analytics',
+  getParentRoute: () => FeaturesRoute,
+} as any)
+const ContactScheduleDemoRoute = ContactScheduleDemoRouteImport.update({
+  id: '/schedule-demo',
+  path: '/schedule-demo',
+  getParentRoute: () => ContactRoute,
+} as any)
+const ContactRequestPricingRoute = ContactRequestPricingRouteImport.update({
+  id: '/request-pricing',
+  path: '/request-pricing',
+  getParentRoute: () => ContactRoute,
+} as any)
+const ContactBookConsultationRoute = ContactBookConsultationRouteImport.update({
+  id: '/book-consultation',
+  path: '/book-consultation',
+  getParentRoute: () => ContactRoute,
+} as any)
+const CaseStudiesUniversityTransformationRoute =
+  CaseStudiesUniversityTransformationRouteImport.update({
+    id: '/university-transformation',
+    path: '/university-transformation',
+    getParentRoute: () => CaseStudiesRoute,
+  } as any)
+const CaseStudiesSchoolSuccessStoryRoute =
+  CaseStudiesSchoolSuccessStoryRouteImport.update({
+    id: '/school-success-story',
+    path: '/school-success-story',
+    getParentRoute: () => CaseStudiesRoute,
+  } as any)
+const CaseStudiesMultiCampusDeploymentRoute =
+  CaseStudiesMultiCampusDeploymentRouteImport.update({
+    id: '/multi-campus-deployment',
+    path: '/multi-campus-deployment',
+    getParentRoute: () => CaseStudiesRoute,
+  } as any)
+const CareersApplyRoute = CareersApplyRouteImport.update({
+  id: '/apply',
+  path: '/apply',
+  getParentRoute: () => CareersRoute,
+} as any)
+const BlogSchoolManagementRoute = BlogSchoolManagementRouteImport.update({
+  id: '/school-management',
+  path: '/school-management',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogLmsTrendsRoute = BlogLmsTrendsRouteImport.update({
+  id: '/lms-trends',
+  path: '/lms-trends',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogHowErpImprovesSchoolManagementRoute =
+  BlogHowErpImprovesSchoolManagementRouteImport.update({
+    id: '/how-erp-improves-school-management',
+    path: '/how-erp-improves-school-management',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogHigherEducationRoute = BlogHigherEducationRouteImport.update({
+  id: '/higher-education',
+  path: '/higher-education',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogErpSolutionsRoute = BlogErpSolutionsRouteImport.update({
+  id: '/erp-solutions',
+  path: '/erp-solutions',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogEducationTechnologyRoute = BlogEducationTechnologyRouteImport.update({
+  id: '/education-technology',
+  path: '/education-technology',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogDigitalTransformationInHigherEducationRoute =
+  BlogDigitalTransformationInHigherEducationRouteImport.update({
+    id: '/digital-transformation-in-higher-education',
+    path: '/digital-transformation-in-higher-education',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogDigitalTransformationRoute =
+  BlogDigitalTransformationRouteImport.update({
+    id: '/digital-transformation',
+    path: '/digital-transformation',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogChoosingAnLmsForYourCollegeRoute =
+  BlogChoosingAnLmsForYourCollegeRouteImport.update({
+    id: '/choosing-an-lms-for-your-college',
+    path: '/choosing-an-lms-for-your-college',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const ProductsLmsVideoLearningRoute =
+  ProductsLmsVideoLearningRouteImport.update({
+    id: '/video-learning',
+    path: '/video-learning',
+    getParentRoute: () => ProductsLmsRoute,
+  } as any)
+const ProductsLmsQuizzesRoute = ProductsLmsQuizzesRouteImport.update({
+  id: '/quizzes',
+  path: '/quizzes',
+  getParentRoute: () => ProductsLmsRoute,
+} as any)
+const ProductsLmsProgressTrackingRoute =
+  ProductsLmsProgressTrackingRouteImport.update({
+    id: '/progress-tracking',
+    path: '/progress-tracking',
+    getParentRoute: () => ProductsLmsRoute,
+  } as any)
+const ProductsLmsOnlineClassesRoute =
+  ProductsLmsOnlineClassesRouteImport.update({
+    id: '/online-classes',
+    path: '/online-classes',
+    getParentRoute: () => ProductsLmsRoute,
+  } as any)
+const ProductsLmsCourseManagementRoute =
+  ProductsLmsCourseManagementRouteImport.update({
+    id: '/course-management',
+    path: '/course-management',
+    getParentRoute: () => ProductsLmsRoute,
+  } as any)
+const ProductsLmsCertificatesRoute = ProductsLmsCertificatesRouteImport.update({
+  id: '/certificates',
+  path: '/certificates',
+  getParentRoute: () => ProductsLmsRoute,
+} as any)
+const ProductsLmsAssignmentsRoute = ProductsLmsAssignmentsRouteImport.update({
+  id: '/assignments',
+  path: '/assignments',
+  getParentRoute: () => ProductsLmsRoute,
+} as any)
+const ProductsErpTransportRoute = ProductsErpTransportRouteImport.update({
+  id: '/transport',
+  path: '/transport',
+  getParentRoute: () => ProductsErpRoute,
+} as any)
+const ProductsErpStudentInformationRoute =
+  ProductsErpStudentInformationRouteImport.update({
+    id: '/student-information',
+    path: '/student-information',
+    getParentRoute: () => ProductsErpRoute,
+  } as any)
+const ProductsErpLibraryRoute = ProductsErpLibraryRouteImport.update({
+  id: '/library',
+  path: '/library',
+  getParentRoute: () => ProductsErpRoute,
+} as any)
+const ProductsErpHrPayrollRoute = ProductsErpHrPayrollRouteImport.update({
+  id: '/hr-payroll',
+  path: '/hr-payroll',
+  getParentRoute: () => ProductsErpRoute,
+} as any)
+const ProductsErpHostelRoute = ProductsErpHostelRouteImport.update({
+  id: '/hostel',
+  path: '/hostel',
+  getParentRoute: () => ProductsErpRoute,
+} as any)
+const ProductsErpFeesRoute = ProductsErpFeesRouteImport.update({
+  id: '/fees',
+  path: '/fees',
+  getParentRoute: () => ProductsErpRoute,
+} as any)
+const ProductsErpExaminationsRoute = ProductsErpExaminationsRouteImport.update({
+  id: '/examinations',
+  path: '/examinations',
+  getParentRoute: () => ProductsErpRoute,
+} as any)
+const ProductsErpAttendanceRoute = ProductsErpAttendanceRouteImport.update({
+  id: '/attendance',
+  path: '/attendance',
+  getParentRoute: () => ProductsErpRoute,
+} as any)
+const ProductsErpAdmissionsRoute = ProductsErpAdmissionsRouteImport.update({
+  id: '/admissions',
+  path: '/admissions',
+  getParentRoute: () => ProductsErpRoute,
+} as any)
+const FeaturesTeacherPortalReportsRoute =
+  FeaturesTeacherPortalReportsRouteImport.update({
+    id: '/reports',
+    path: '/reports',
+    getParentRoute: () => FeaturesTeacherPortalRoute,
+  } as any)
+const FeaturesTeacherPortalClassManagementRoute =
+  FeaturesTeacherPortalClassManagementRouteImport.update({
+    id: '/class-management',
+    path: '/class-management',
+    getParentRoute: () => FeaturesTeacherPortalRoute,
+  } as any)
+const FeaturesTeacherPortalAttendanceRoute =
+  FeaturesTeacherPortalAttendanceRouteImport.update({
+    id: '/attendance',
+    path: '/attendance',
+    getParentRoute: () => FeaturesTeacherPortalRoute,
+  } as any)
+const FeaturesTeacherPortalAssignmentsRoute =
+  FeaturesTeacherPortalAssignmentsRouteImport.update({
+    id: '/assignments',
+    path: '/assignments',
+    getParentRoute: () => FeaturesTeacherPortalRoute,
+  } as any)
+const FeaturesStudentManagementProfilesRoute =
+  FeaturesStudentManagementProfilesRouteImport.update({
+    id: '/profiles',
+    path: '/profiles',
+    getParentRoute: () => FeaturesStudentManagementRoute,
+  } as any)
+const FeaturesStudentManagementParentInfoRoute =
+  FeaturesStudentManagementParentInfoRouteImport.update({
+    id: '/parent-info',
+    path: '/parent-info',
+    getParentRoute: () => FeaturesStudentManagementRoute,
+  } as any)
+const FeaturesStudentManagementDocumentsRoute =
+  FeaturesStudentManagementDocumentsRouteImport.update({
+    id: '/documents',
+    path: '/documents',
+    getParentRoute: () => FeaturesStudentManagementRoute,
+  } as any)
+const FeaturesStudentManagementAcademicRecordsRoute =
+  FeaturesStudentManagementAcademicRecordsRouteImport.update({
+    id: '/academic-records',
+    path: '/academic-records',
+    getParentRoute: () => FeaturesStudentManagementRoute,
+  } as any)
+const FeaturesParentPortalResultsRoute =
+  FeaturesParentPortalResultsRouteImport.update({
+    id: '/results',
+    path: '/results',
+    getParentRoute: () => FeaturesParentPortalRoute,
+  } as any)
+const FeaturesParentPortalFeePaymentsRoute =
+  FeaturesParentPortalFeePaymentsRouteImport.update({
+    id: '/fee-payments',
+    path: '/fee-payments',
+    getParentRoute: () => FeaturesParentPortalRoute,
+  } as any)
+const FeaturesParentPortalCommunicationRoute =
+  FeaturesParentPortalCommunicationRouteImport.update({
+    id: '/communication',
+    path: '/communication',
+    getParentRoute: () => FeaturesParentPortalRoute,
+  } as any)
+const FeaturesParentPortalAttendanceRoute =
+  FeaturesParentPortalAttendanceRouteImport.update({
+    id: '/attendance',
+    path: '/attendance',
+    getParentRoute: () => FeaturesParentPortalRoute,
+  } as any)
+const FeaturesAnalyticsReportsRoute =
+  FeaturesAnalyticsReportsRouteImport.update({
+    id: '/reports',
+    path: '/reports',
+    getParentRoute: () => FeaturesAnalyticsRoute,
+  } as any)
+const FeaturesAnalyticsKpisRoute = FeaturesAnalyticsKpisRouteImport.update({
+  id: '/kpis',
+  path: '/kpis',
+  getParentRoute: () => FeaturesAnalyticsRoute,
+} as any)
+const FeaturesAnalyticsInsightsRoute =
+  FeaturesAnalyticsInsightsRouteImport.update({
+    id: '/insights',
+    path: '/insights',
+    getParentRoute: () => FeaturesAnalyticsRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
-  '/features': typeof FeaturesRoute
-  '/pricing': typeof PricingRoute
+  '/blog': typeof BlogRouteWithChildren
+  '/careers': typeof CareersRouteWithChildren
+  '/case-studies': typeof CaseStudiesRouteWithChildren
+  '/contact': typeof ContactRouteWithChildren
+  '/features': typeof FeaturesRouteWithChildren
+  '/knowledge-base': typeof KnowledgeBaseRouteWithChildren
+  '/leadership': typeof LeadershipRoute
+  '/pricing': typeof PricingRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/solutions': typeof SolutionsRoute
-  '/testimonials': typeof TestimonialsRoute
+  '/solutions': typeof SolutionsRouteWithChildren
+  '/support': typeof SupportRouteWithChildren
+  '/testimonials': typeof TestimonialsRouteWithChildren
+  '/blog/choosing-an-lms-for-your-college': typeof BlogChoosingAnLmsForYourCollegeRoute
+  '/blog/digital-transformation': typeof BlogDigitalTransformationRoute
+  '/blog/digital-transformation-in-higher-education': typeof BlogDigitalTransformationInHigherEducationRoute
+  '/blog/education-technology': typeof BlogEducationTechnologyRoute
+  '/blog/erp-solutions': typeof BlogErpSolutionsRoute
+  '/blog/higher-education': typeof BlogHigherEducationRoute
+  '/blog/how-erp-improves-school-management': typeof BlogHowErpImprovesSchoolManagementRoute
+  '/blog/lms-trends': typeof BlogLmsTrendsRoute
+  '/blog/school-management': typeof BlogSchoolManagementRoute
+  '/careers/apply': typeof CareersApplyRoute
+  '/case-studies/multi-campus-deployment': typeof CaseStudiesMultiCampusDeploymentRoute
+  '/case-studies/school-success-story': typeof CaseStudiesSchoolSuccessStoryRoute
+  '/case-studies/university-transformation': typeof CaseStudiesUniversityTransformationRoute
+  '/contact/book-consultation': typeof ContactBookConsultationRoute
+  '/contact/request-pricing': typeof ContactRequestPricingRoute
+  '/contact/schedule-demo': typeof ContactScheduleDemoRoute
+  '/features/analytics': typeof FeaturesAnalyticsRouteWithChildren
+  '/features/parent-portal': typeof FeaturesParentPortalRouteWithChildren
+  '/features/student-management': typeof FeaturesStudentManagementRouteWithChildren
+  '/features/teacher-portal': typeof FeaturesTeacherPortalRouteWithChildren
+  '/knowledge-base/documentation': typeof KnowledgeBaseDocumentationRoute
+  '/knowledge-base/faqs': typeof KnowledgeBaseFaqsRoute
+  '/knowledge-base/getting-started': typeof KnowledgeBaseGettingStartedRoute
+  '/knowledge-base/user-guides': typeof KnowledgeBaseUserGuidesRoute
+  '/knowledge-base/video-tutorials': typeof KnowledgeBaseVideoTutorialsRoute
+  '/legal/cookie-policy': typeof LegalCookiePolicyRoute
+  '/legal/data-security': typeof LegalDataSecurityRoute
+  '/legal/privacy': typeof LegalPrivacyRoute
+  '/legal/refund-policy': typeof LegalRefundPolicyRoute
+  '/legal/terms': typeof LegalTermsRoute
+  '/pricing/enterprise': typeof PricingEnterpriseRoute
+  '/pricing/professional': typeof PricingProfessionalRoute
+  '/pricing/starter': typeof PricingStarterRoute
+  '/products/erp': typeof ProductsErpRouteWithChildren
+  '/products/lms': typeof ProductsLmsRouteWithChildren
+  '/solutions/colleges': typeof SolutionsCollegesRoute
+  '/solutions/multi-campus': typeof SolutionsMultiCampusRoute
+  '/solutions/schools': typeof SolutionsSchoolsRoute
+  '/solutions/training-institutes': typeof SolutionsTrainingInstitutesRoute
+  '/solutions/universities': typeof SolutionsUniversitiesRoute
+  '/support/contact-support': typeof SupportContactSupportRoute
+  '/support/help-center': typeof SupportHelpCenterRoute
+  '/support/remote-assistance': typeof SupportRemoteAssistanceRoute
+  '/support/submit-ticket': typeof SupportSubmitTicketRoute
+  '/support/system-status': typeof SupportSystemStatusRoute
+  '/testimonials/colleges': typeof TestimonialsCollegesRoute
+  '/testimonials/schools': typeof TestimonialsSchoolsRoute
+  '/testimonials/universities': typeof TestimonialsUniversitiesRoute
+  '/features/analytics/insights': typeof FeaturesAnalyticsInsightsRoute
+  '/features/analytics/kpis': typeof FeaturesAnalyticsKpisRoute
+  '/features/analytics/reports': typeof FeaturesAnalyticsReportsRoute
+  '/features/parent-portal/attendance': typeof FeaturesParentPortalAttendanceRoute
+  '/features/parent-portal/communication': typeof FeaturesParentPortalCommunicationRoute
+  '/features/parent-portal/fee-payments': typeof FeaturesParentPortalFeePaymentsRoute
+  '/features/parent-portal/results': typeof FeaturesParentPortalResultsRoute
+  '/features/student-management/academic-records': typeof FeaturesStudentManagementAcademicRecordsRoute
+  '/features/student-management/documents': typeof FeaturesStudentManagementDocumentsRoute
+  '/features/student-management/parent-info': typeof FeaturesStudentManagementParentInfoRoute
+  '/features/student-management/profiles': typeof FeaturesStudentManagementProfilesRoute
+  '/features/teacher-portal/assignments': typeof FeaturesTeacherPortalAssignmentsRoute
+  '/features/teacher-portal/attendance': typeof FeaturesTeacherPortalAttendanceRoute
+  '/features/teacher-portal/class-management': typeof FeaturesTeacherPortalClassManagementRoute
+  '/features/teacher-portal/reports': typeof FeaturesTeacherPortalReportsRoute
+  '/products/erp/admissions': typeof ProductsErpAdmissionsRoute
+  '/products/erp/attendance': typeof ProductsErpAttendanceRoute
+  '/products/erp/examinations': typeof ProductsErpExaminationsRoute
+  '/products/erp/fees': typeof ProductsErpFeesRoute
+  '/products/erp/hostel': typeof ProductsErpHostelRoute
+  '/products/erp/hr-payroll': typeof ProductsErpHrPayrollRoute
+  '/products/erp/library': typeof ProductsErpLibraryRoute
+  '/products/erp/student-information': typeof ProductsErpStudentInformationRoute
+  '/products/erp/transport': typeof ProductsErpTransportRoute
+  '/products/lms/assignments': typeof ProductsLmsAssignmentsRoute
+  '/products/lms/certificates': typeof ProductsLmsCertificatesRoute
+  '/products/lms/course-management': typeof ProductsLmsCourseManagementRoute
+  '/products/lms/online-classes': typeof ProductsLmsOnlineClassesRoute
+  '/products/lms/progress-tracking': typeof ProductsLmsProgressTrackingRoute
+  '/products/lms/quizzes': typeof ProductsLmsQuizzesRoute
+  '/products/lms/video-learning': typeof ProductsLmsVideoLearningRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
-  '/features': typeof FeaturesRoute
-  '/pricing': typeof PricingRoute
+  '/blog': typeof BlogRouteWithChildren
+  '/careers': typeof CareersRouteWithChildren
+  '/case-studies': typeof CaseStudiesRouteWithChildren
+  '/contact': typeof ContactRouteWithChildren
+  '/features': typeof FeaturesRouteWithChildren
+  '/knowledge-base': typeof KnowledgeBaseRouteWithChildren
+  '/leadership': typeof LeadershipRoute
+  '/pricing': typeof PricingRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/solutions': typeof SolutionsRoute
-  '/testimonials': typeof TestimonialsRoute
+  '/solutions': typeof SolutionsRouteWithChildren
+  '/support': typeof SupportRouteWithChildren
+  '/testimonials': typeof TestimonialsRouteWithChildren
+  '/blog/choosing-an-lms-for-your-college': typeof BlogChoosingAnLmsForYourCollegeRoute
+  '/blog/digital-transformation': typeof BlogDigitalTransformationRoute
+  '/blog/digital-transformation-in-higher-education': typeof BlogDigitalTransformationInHigherEducationRoute
+  '/blog/education-technology': typeof BlogEducationTechnologyRoute
+  '/blog/erp-solutions': typeof BlogErpSolutionsRoute
+  '/blog/higher-education': typeof BlogHigherEducationRoute
+  '/blog/how-erp-improves-school-management': typeof BlogHowErpImprovesSchoolManagementRoute
+  '/blog/lms-trends': typeof BlogLmsTrendsRoute
+  '/blog/school-management': typeof BlogSchoolManagementRoute
+  '/careers/apply': typeof CareersApplyRoute
+  '/case-studies/multi-campus-deployment': typeof CaseStudiesMultiCampusDeploymentRoute
+  '/case-studies/school-success-story': typeof CaseStudiesSchoolSuccessStoryRoute
+  '/case-studies/university-transformation': typeof CaseStudiesUniversityTransformationRoute
+  '/contact/book-consultation': typeof ContactBookConsultationRoute
+  '/contact/request-pricing': typeof ContactRequestPricingRoute
+  '/contact/schedule-demo': typeof ContactScheduleDemoRoute
+  '/features/analytics': typeof FeaturesAnalyticsRouteWithChildren
+  '/features/parent-portal': typeof FeaturesParentPortalRouteWithChildren
+  '/features/student-management': typeof FeaturesStudentManagementRouteWithChildren
+  '/features/teacher-portal': typeof FeaturesTeacherPortalRouteWithChildren
+  '/knowledge-base/documentation': typeof KnowledgeBaseDocumentationRoute
+  '/knowledge-base/faqs': typeof KnowledgeBaseFaqsRoute
+  '/knowledge-base/getting-started': typeof KnowledgeBaseGettingStartedRoute
+  '/knowledge-base/user-guides': typeof KnowledgeBaseUserGuidesRoute
+  '/knowledge-base/video-tutorials': typeof KnowledgeBaseVideoTutorialsRoute
+  '/legal/cookie-policy': typeof LegalCookiePolicyRoute
+  '/legal/data-security': typeof LegalDataSecurityRoute
+  '/legal/privacy': typeof LegalPrivacyRoute
+  '/legal/refund-policy': typeof LegalRefundPolicyRoute
+  '/legal/terms': typeof LegalTermsRoute
+  '/pricing/enterprise': typeof PricingEnterpriseRoute
+  '/pricing/professional': typeof PricingProfessionalRoute
+  '/pricing/starter': typeof PricingStarterRoute
+  '/products/erp': typeof ProductsErpRouteWithChildren
+  '/products/lms': typeof ProductsLmsRouteWithChildren
+  '/solutions/colleges': typeof SolutionsCollegesRoute
+  '/solutions/multi-campus': typeof SolutionsMultiCampusRoute
+  '/solutions/schools': typeof SolutionsSchoolsRoute
+  '/solutions/training-institutes': typeof SolutionsTrainingInstitutesRoute
+  '/solutions/universities': typeof SolutionsUniversitiesRoute
+  '/support/contact-support': typeof SupportContactSupportRoute
+  '/support/help-center': typeof SupportHelpCenterRoute
+  '/support/remote-assistance': typeof SupportRemoteAssistanceRoute
+  '/support/submit-ticket': typeof SupportSubmitTicketRoute
+  '/support/system-status': typeof SupportSystemStatusRoute
+  '/testimonials/colleges': typeof TestimonialsCollegesRoute
+  '/testimonials/schools': typeof TestimonialsSchoolsRoute
+  '/testimonials/universities': typeof TestimonialsUniversitiesRoute
+  '/features/analytics/insights': typeof FeaturesAnalyticsInsightsRoute
+  '/features/analytics/kpis': typeof FeaturesAnalyticsKpisRoute
+  '/features/analytics/reports': typeof FeaturesAnalyticsReportsRoute
+  '/features/parent-portal/attendance': typeof FeaturesParentPortalAttendanceRoute
+  '/features/parent-portal/communication': typeof FeaturesParentPortalCommunicationRoute
+  '/features/parent-portal/fee-payments': typeof FeaturesParentPortalFeePaymentsRoute
+  '/features/parent-portal/results': typeof FeaturesParentPortalResultsRoute
+  '/features/student-management/academic-records': typeof FeaturesStudentManagementAcademicRecordsRoute
+  '/features/student-management/documents': typeof FeaturesStudentManagementDocumentsRoute
+  '/features/student-management/parent-info': typeof FeaturesStudentManagementParentInfoRoute
+  '/features/student-management/profiles': typeof FeaturesStudentManagementProfilesRoute
+  '/features/teacher-portal/assignments': typeof FeaturesTeacherPortalAssignmentsRoute
+  '/features/teacher-portal/attendance': typeof FeaturesTeacherPortalAttendanceRoute
+  '/features/teacher-portal/class-management': typeof FeaturesTeacherPortalClassManagementRoute
+  '/features/teacher-portal/reports': typeof FeaturesTeacherPortalReportsRoute
+  '/products/erp/admissions': typeof ProductsErpAdmissionsRoute
+  '/products/erp/attendance': typeof ProductsErpAttendanceRoute
+  '/products/erp/examinations': typeof ProductsErpExaminationsRoute
+  '/products/erp/fees': typeof ProductsErpFeesRoute
+  '/products/erp/hostel': typeof ProductsErpHostelRoute
+  '/products/erp/hr-payroll': typeof ProductsErpHrPayrollRoute
+  '/products/erp/library': typeof ProductsErpLibraryRoute
+  '/products/erp/student-information': typeof ProductsErpStudentInformationRoute
+  '/products/erp/transport': typeof ProductsErpTransportRoute
+  '/products/lms/assignments': typeof ProductsLmsAssignmentsRoute
+  '/products/lms/certificates': typeof ProductsLmsCertificatesRoute
+  '/products/lms/course-management': typeof ProductsLmsCourseManagementRoute
+  '/products/lms/online-classes': typeof ProductsLmsOnlineClassesRoute
+  '/products/lms/progress-tracking': typeof ProductsLmsProgressTrackingRoute
+  '/products/lms/quizzes': typeof ProductsLmsQuizzesRoute
+  '/products/lms/video-learning': typeof ProductsLmsVideoLearningRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
-  '/features': typeof FeaturesRoute
-  '/pricing': typeof PricingRoute
+  '/blog': typeof BlogRouteWithChildren
+  '/careers': typeof CareersRouteWithChildren
+  '/case-studies': typeof CaseStudiesRouteWithChildren
+  '/contact': typeof ContactRouteWithChildren
+  '/features': typeof FeaturesRouteWithChildren
+  '/knowledge-base': typeof KnowledgeBaseRouteWithChildren
+  '/leadership': typeof LeadershipRoute
+  '/pricing': typeof PricingRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/solutions': typeof SolutionsRoute
-  '/testimonials': typeof TestimonialsRoute
+  '/solutions': typeof SolutionsRouteWithChildren
+  '/support': typeof SupportRouteWithChildren
+  '/testimonials': typeof TestimonialsRouteWithChildren
+  '/blog/choosing-an-lms-for-your-college': typeof BlogChoosingAnLmsForYourCollegeRoute
+  '/blog/digital-transformation': typeof BlogDigitalTransformationRoute
+  '/blog/digital-transformation-in-higher-education': typeof BlogDigitalTransformationInHigherEducationRoute
+  '/blog/education-technology': typeof BlogEducationTechnologyRoute
+  '/blog/erp-solutions': typeof BlogErpSolutionsRoute
+  '/blog/higher-education': typeof BlogHigherEducationRoute
+  '/blog/how-erp-improves-school-management': typeof BlogHowErpImprovesSchoolManagementRoute
+  '/blog/lms-trends': typeof BlogLmsTrendsRoute
+  '/blog/school-management': typeof BlogSchoolManagementRoute
+  '/careers/apply': typeof CareersApplyRoute
+  '/case-studies/multi-campus-deployment': typeof CaseStudiesMultiCampusDeploymentRoute
+  '/case-studies/school-success-story': typeof CaseStudiesSchoolSuccessStoryRoute
+  '/case-studies/university-transformation': typeof CaseStudiesUniversityTransformationRoute
+  '/contact/book-consultation': typeof ContactBookConsultationRoute
+  '/contact/request-pricing': typeof ContactRequestPricingRoute
+  '/contact/schedule-demo': typeof ContactScheduleDemoRoute
+  '/features/analytics': typeof FeaturesAnalyticsRouteWithChildren
+  '/features/parent-portal': typeof FeaturesParentPortalRouteWithChildren
+  '/features/student-management': typeof FeaturesStudentManagementRouteWithChildren
+  '/features/teacher-portal': typeof FeaturesTeacherPortalRouteWithChildren
+  '/knowledge-base/documentation': typeof KnowledgeBaseDocumentationRoute
+  '/knowledge-base/faqs': typeof KnowledgeBaseFaqsRoute
+  '/knowledge-base/getting-started': typeof KnowledgeBaseGettingStartedRoute
+  '/knowledge-base/user-guides': typeof KnowledgeBaseUserGuidesRoute
+  '/knowledge-base/video-tutorials': typeof KnowledgeBaseVideoTutorialsRoute
+  '/legal/cookie-policy': typeof LegalCookiePolicyRoute
+  '/legal/data-security': typeof LegalDataSecurityRoute
+  '/legal/privacy': typeof LegalPrivacyRoute
+  '/legal/refund-policy': typeof LegalRefundPolicyRoute
+  '/legal/terms': typeof LegalTermsRoute
+  '/pricing/enterprise': typeof PricingEnterpriseRoute
+  '/pricing/professional': typeof PricingProfessionalRoute
+  '/pricing/starter': typeof PricingStarterRoute
+  '/products/erp': typeof ProductsErpRouteWithChildren
+  '/products/lms': typeof ProductsLmsRouteWithChildren
+  '/solutions/colleges': typeof SolutionsCollegesRoute
+  '/solutions/multi-campus': typeof SolutionsMultiCampusRoute
+  '/solutions/schools': typeof SolutionsSchoolsRoute
+  '/solutions/training-institutes': typeof SolutionsTrainingInstitutesRoute
+  '/solutions/universities': typeof SolutionsUniversitiesRoute
+  '/support/contact-support': typeof SupportContactSupportRoute
+  '/support/help-center': typeof SupportHelpCenterRoute
+  '/support/remote-assistance': typeof SupportRemoteAssistanceRoute
+  '/support/submit-ticket': typeof SupportSubmitTicketRoute
+  '/support/system-status': typeof SupportSystemStatusRoute
+  '/testimonials/colleges': typeof TestimonialsCollegesRoute
+  '/testimonials/schools': typeof TestimonialsSchoolsRoute
+  '/testimonials/universities': typeof TestimonialsUniversitiesRoute
+  '/features/analytics/insights': typeof FeaturesAnalyticsInsightsRoute
+  '/features/analytics/kpis': typeof FeaturesAnalyticsKpisRoute
+  '/features/analytics/reports': typeof FeaturesAnalyticsReportsRoute
+  '/features/parent-portal/attendance': typeof FeaturesParentPortalAttendanceRoute
+  '/features/parent-portal/communication': typeof FeaturesParentPortalCommunicationRoute
+  '/features/parent-portal/fee-payments': typeof FeaturesParentPortalFeePaymentsRoute
+  '/features/parent-portal/results': typeof FeaturesParentPortalResultsRoute
+  '/features/student-management/academic-records': typeof FeaturesStudentManagementAcademicRecordsRoute
+  '/features/student-management/documents': typeof FeaturesStudentManagementDocumentsRoute
+  '/features/student-management/parent-info': typeof FeaturesStudentManagementParentInfoRoute
+  '/features/student-management/profiles': typeof FeaturesStudentManagementProfilesRoute
+  '/features/teacher-portal/assignments': typeof FeaturesTeacherPortalAssignmentsRoute
+  '/features/teacher-portal/attendance': typeof FeaturesTeacherPortalAttendanceRoute
+  '/features/teacher-portal/class-management': typeof FeaturesTeacherPortalClassManagementRoute
+  '/features/teacher-portal/reports': typeof FeaturesTeacherPortalReportsRoute
+  '/products/erp/admissions': typeof ProductsErpAdmissionsRoute
+  '/products/erp/attendance': typeof ProductsErpAttendanceRoute
+  '/products/erp/examinations': typeof ProductsErpExaminationsRoute
+  '/products/erp/fees': typeof ProductsErpFeesRoute
+  '/products/erp/hostel': typeof ProductsErpHostelRoute
+  '/products/erp/hr-payroll': typeof ProductsErpHrPayrollRoute
+  '/products/erp/library': typeof ProductsErpLibraryRoute
+  '/products/erp/student-information': typeof ProductsErpStudentInformationRoute
+  '/products/erp/transport': typeof ProductsErpTransportRoute
+  '/products/lms/assignments': typeof ProductsLmsAssignmentsRoute
+  '/products/lms/certificates': typeof ProductsLmsCertificatesRoute
+  '/products/lms/course-management': typeof ProductsLmsCourseManagementRoute
+  '/products/lms/online-classes': typeof ProductsLmsOnlineClassesRoute
+  '/products/lms/progress-tracking': typeof ProductsLmsProgressTrackingRoute
+  '/products/lms/quizzes': typeof ProductsLmsQuizzesRoute
+  '/products/lms/video-learning': typeof ProductsLmsVideoLearningRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about'
+    | '/blog'
+    | '/careers'
+    | '/case-studies'
     | '/contact'
     | '/features'
+    | '/knowledge-base'
+    | '/leadership'
     | '/pricing'
     | '/sitemap.xml'
     | '/solutions'
+    | '/support'
     | '/testimonials'
+    | '/blog/choosing-an-lms-for-your-college'
+    | '/blog/digital-transformation'
+    | '/blog/digital-transformation-in-higher-education'
+    | '/blog/education-technology'
+    | '/blog/erp-solutions'
+    | '/blog/higher-education'
+    | '/blog/how-erp-improves-school-management'
+    | '/blog/lms-trends'
+    | '/blog/school-management'
+    | '/careers/apply'
+    | '/case-studies/multi-campus-deployment'
+    | '/case-studies/school-success-story'
+    | '/case-studies/university-transformation'
+    | '/contact/book-consultation'
+    | '/contact/request-pricing'
+    | '/contact/schedule-demo'
+    | '/features/analytics'
+    | '/features/parent-portal'
+    | '/features/student-management'
+    | '/features/teacher-portal'
+    | '/knowledge-base/documentation'
+    | '/knowledge-base/faqs'
+    | '/knowledge-base/getting-started'
+    | '/knowledge-base/user-guides'
+    | '/knowledge-base/video-tutorials'
+    | '/legal/cookie-policy'
+    | '/legal/data-security'
+    | '/legal/privacy'
+    | '/legal/refund-policy'
+    | '/legal/terms'
+    | '/pricing/enterprise'
+    | '/pricing/professional'
+    | '/pricing/starter'
+    | '/products/erp'
+    | '/products/lms'
+    | '/solutions/colleges'
+    | '/solutions/multi-campus'
+    | '/solutions/schools'
+    | '/solutions/training-institutes'
+    | '/solutions/universities'
+    | '/support/contact-support'
+    | '/support/help-center'
+    | '/support/remote-assistance'
+    | '/support/submit-ticket'
+    | '/support/system-status'
+    | '/testimonials/colleges'
+    | '/testimonials/schools'
+    | '/testimonials/universities'
+    | '/features/analytics/insights'
+    | '/features/analytics/kpis'
+    | '/features/analytics/reports'
+    | '/features/parent-portal/attendance'
+    | '/features/parent-portal/communication'
+    | '/features/parent-portal/fee-payments'
+    | '/features/parent-portal/results'
+    | '/features/student-management/academic-records'
+    | '/features/student-management/documents'
+    | '/features/student-management/parent-info'
+    | '/features/student-management/profiles'
+    | '/features/teacher-portal/assignments'
+    | '/features/teacher-portal/attendance'
+    | '/features/teacher-portal/class-management'
+    | '/features/teacher-portal/reports'
+    | '/products/erp/admissions'
+    | '/products/erp/attendance'
+    | '/products/erp/examinations'
+    | '/products/erp/fees'
+    | '/products/erp/hostel'
+    | '/products/erp/hr-payroll'
+    | '/products/erp/library'
+    | '/products/erp/student-information'
+    | '/products/erp/transport'
+    | '/products/lms/assignments'
+    | '/products/lms/certificates'
+    | '/products/lms/course-management'
+    | '/products/lms/online-classes'
+    | '/products/lms/progress-tracking'
+    | '/products/lms/quizzes'
+    | '/products/lms/video-learning'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
+    | '/blog'
+    | '/careers'
+    | '/case-studies'
     | '/contact'
     | '/features'
+    | '/knowledge-base'
+    | '/leadership'
     | '/pricing'
     | '/sitemap.xml'
     | '/solutions'
+    | '/support'
     | '/testimonials'
+    | '/blog/choosing-an-lms-for-your-college'
+    | '/blog/digital-transformation'
+    | '/blog/digital-transformation-in-higher-education'
+    | '/blog/education-technology'
+    | '/blog/erp-solutions'
+    | '/blog/higher-education'
+    | '/blog/how-erp-improves-school-management'
+    | '/blog/lms-trends'
+    | '/blog/school-management'
+    | '/careers/apply'
+    | '/case-studies/multi-campus-deployment'
+    | '/case-studies/school-success-story'
+    | '/case-studies/university-transformation'
+    | '/contact/book-consultation'
+    | '/contact/request-pricing'
+    | '/contact/schedule-demo'
+    | '/features/analytics'
+    | '/features/parent-portal'
+    | '/features/student-management'
+    | '/features/teacher-portal'
+    | '/knowledge-base/documentation'
+    | '/knowledge-base/faqs'
+    | '/knowledge-base/getting-started'
+    | '/knowledge-base/user-guides'
+    | '/knowledge-base/video-tutorials'
+    | '/legal/cookie-policy'
+    | '/legal/data-security'
+    | '/legal/privacy'
+    | '/legal/refund-policy'
+    | '/legal/terms'
+    | '/pricing/enterprise'
+    | '/pricing/professional'
+    | '/pricing/starter'
+    | '/products/erp'
+    | '/products/lms'
+    | '/solutions/colleges'
+    | '/solutions/multi-campus'
+    | '/solutions/schools'
+    | '/solutions/training-institutes'
+    | '/solutions/universities'
+    | '/support/contact-support'
+    | '/support/help-center'
+    | '/support/remote-assistance'
+    | '/support/submit-ticket'
+    | '/support/system-status'
+    | '/testimonials/colleges'
+    | '/testimonials/schools'
+    | '/testimonials/universities'
+    | '/features/analytics/insights'
+    | '/features/analytics/kpis'
+    | '/features/analytics/reports'
+    | '/features/parent-portal/attendance'
+    | '/features/parent-portal/communication'
+    | '/features/parent-portal/fee-payments'
+    | '/features/parent-portal/results'
+    | '/features/student-management/academic-records'
+    | '/features/student-management/documents'
+    | '/features/student-management/parent-info'
+    | '/features/student-management/profiles'
+    | '/features/teacher-portal/assignments'
+    | '/features/teacher-portal/attendance'
+    | '/features/teacher-portal/class-management'
+    | '/features/teacher-portal/reports'
+    | '/products/erp/admissions'
+    | '/products/erp/attendance'
+    | '/products/erp/examinations'
+    | '/products/erp/fees'
+    | '/products/erp/hostel'
+    | '/products/erp/hr-payroll'
+    | '/products/erp/library'
+    | '/products/erp/student-information'
+    | '/products/erp/transport'
+    | '/products/lms/assignments'
+    | '/products/lms/certificates'
+    | '/products/lms/course-management'
+    | '/products/lms/online-classes'
+    | '/products/lms/progress-tracking'
+    | '/products/lms/quizzes'
+    | '/products/lms/video-learning'
   id:
     | '__root__'
     | '/'
     | '/about'
+    | '/blog'
+    | '/careers'
+    | '/case-studies'
     | '/contact'
     | '/features'
+    | '/knowledge-base'
+    | '/leadership'
     | '/pricing'
     | '/sitemap.xml'
     | '/solutions'
+    | '/support'
     | '/testimonials'
+    | '/blog/choosing-an-lms-for-your-college'
+    | '/blog/digital-transformation'
+    | '/blog/digital-transformation-in-higher-education'
+    | '/blog/education-technology'
+    | '/blog/erp-solutions'
+    | '/blog/higher-education'
+    | '/blog/how-erp-improves-school-management'
+    | '/blog/lms-trends'
+    | '/blog/school-management'
+    | '/careers/apply'
+    | '/case-studies/multi-campus-deployment'
+    | '/case-studies/school-success-story'
+    | '/case-studies/university-transformation'
+    | '/contact/book-consultation'
+    | '/contact/request-pricing'
+    | '/contact/schedule-demo'
+    | '/features/analytics'
+    | '/features/parent-portal'
+    | '/features/student-management'
+    | '/features/teacher-portal'
+    | '/knowledge-base/documentation'
+    | '/knowledge-base/faqs'
+    | '/knowledge-base/getting-started'
+    | '/knowledge-base/user-guides'
+    | '/knowledge-base/video-tutorials'
+    | '/legal/cookie-policy'
+    | '/legal/data-security'
+    | '/legal/privacy'
+    | '/legal/refund-policy'
+    | '/legal/terms'
+    | '/pricing/enterprise'
+    | '/pricing/professional'
+    | '/pricing/starter'
+    | '/products/erp'
+    | '/products/lms'
+    | '/solutions/colleges'
+    | '/solutions/multi-campus'
+    | '/solutions/schools'
+    | '/solutions/training-institutes'
+    | '/solutions/universities'
+    | '/support/contact-support'
+    | '/support/help-center'
+    | '/support/remote-assistance'
+    | '/support/submit-ticket'
+    | '/support/system-status'
+    | '/testimonials/colleges'
+    | '/testimonials/schools'
+    | '/testimonials/universities'
+    | '/features/analytics/insights'
+    | '/features/analytics/kpis'
+    | '/features/analytics/reports'
+    | '/features/parent-portal/attendance'
+    | '/features/parent-portal/communication'
+    | '/features/parent-portal/fee-payments'
+    | '/features/parent-portal/results'
+    | '/features/student-management/academic-records'
+    | '/features/student-management/documents'
+    | '/features/student-management/parent-info'
+    | '/features/student-management/profiles'
+    | '/features/teacher-portal/assignments'
+    | '/features/teacher-portal/attendance'
+    | '/features/teacher-portal/class-management'
+    | '/features/teacher-portal/reports'
+    | '/products/erp/admissions'
+    | '/products/erp/attendance'
+    | '/products/erp/examinations'
+    | '/products/erp/fees'
+    | '/products/erp/hostel'
+    | '/products/erp/hr-payroll'
+    | '/products/erp/library'
+    | '/products/erp/student-information'
+    | '/products/erp/transport'
+    | '/products/lms/assignments'
+    | '/products/lms/certificates'
+    | '/products/lms/course-management'
+    | '/products/lms/online-classes'
+    | '/products/lms/progress-tracking'
+    | '/products/lms/quizzes'
+    | '/products/lms/video-learning'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  ContactRoute: typeof ContactRoute
-  FeaturesRoute: typeof FeaturesRoute
-  PricingRoute: typeof PricingRoute
+  BlogRoute: typeof BlogRouteWithChildren
+  CareersRoute: typeof CareersRouteWithChildren
+  CaseStudiesRoute: typeof CaseStudiesRouteWithChildren
+  ContactRoute: typeof ContactRouteWithChildren
+  FeaturesRoute: typeof FeaturesRouteWithChildren
+  KnowledgeBaseRoute: typeof KnowledgeBaseRouteWithChildren
+  LeadershipRoute: typeof LeadershipRoute
+  PricingRoute: typeof PricingRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
-  SolutionsRoute: typeof SolutionsRoute
-  TestimonialsRoute: typeof TestimonialsRoute
+  SolutionsRoute: typeof SolutionsRouteWithChildren
+  SupportRoute: typeof SupportRouteWithChildren
+  TestimonialsRoute: typeof TestimonialsRouteWithChildren
+  LegalCookiePolicyRoute: typeof LegalCookiePolicyRoute
+  LegalDataSecurityRoute: typeof LegalDataSecurityRoute
+  LegalPrivacyRoute: typeof LegalPrivacyRoute
+  LegalRefundPolicyRoute: typeof LegalRefundPolicyRoute
+  LegalTermsRoute: typeof LegalTermsRoute
+  ProductsErpRoute: typeof ProductsErpRouteWithChildren
+  ProductsLmsRoute: typeof ProductsLmsRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -141,6 +1206,13 @@ declare module '@tanstack/react-router' {
       path: '/testimonials'
       fullPath: '/testimonials'
       preLoaderRoute: typeof TestimonialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/support': {
+      id: '/support'
+      path: '/support'
+      fullPath: '/support'
+      preLoaderRoute: typeof SupportRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/solutions': {
@@ -164,6 +1236,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/leadership': {
+      id: '/leadership'
+      path: '/leadership'
+      fullPath: '/leadership'
+      preLoaderRoute: typeof LeadershipRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/knowledge-base': {
+      id: '/knowledge-base'
+      path: '/knowledge-base'
+      fullPath: '/knowledge-base'
+      preLoaderRoute: typeof KnowledgeBaseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/features': {
       id: '/features'
       path: '/features'
@@ -176,6 +1262,27 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/case-studies': {
+      id: '/case-studies'
+      path: '/case-studies'
+      fullPath: '/case-studies'
+      preLoaderRoute: typeof CaseStudiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/careers': {
+      id: '/careers'
+      path: '/careers'
+      fullPath: '/careers'
+      preLoaderRoute: typeof CareersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -192,18 +1299,892 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/testimonials/universities': {
+      id: '/testimonials/universities'
+      path: '/universities'
+      fullPath: '/testimonials/universities'
+      preLoaderRoute: typeof TestimonialsUniversitiesRouteImport
+      parentRoute: typeof TestimonialsRoute
+    }
+    '/testimonials/schools': {
+      id: '/testimonials/schools'
+      path: '/schools'
+      fullPath: '/testimonials/schools'
+      preLoaderRoute: typeof TestimonialsSchoolsRouteImport
+      parentRoute: typeof TestimonialsRoute
+    }
+    '/testimonials/colleges': {
+      id: '/testimonials/colleges'
+      path: '/colleges'
+      fullPath: '/testimonials/colleges'
+      preLoaderRoute: typeof TestimonialsCollegesRouteImport
+      parentRoute: typeof TestimonialsRoute
+    }
+    '/support/system-status': {
+      id: '/support/system-status'
+      path: '/system-status'
+      fullPath: '/support/system-status'
+      preLoaderRoute: typeof SupportSystemStatusRouteImport
+      parentRoute: typeof SupportRoute
+    }
+    '/support/submit-ticket': {
+      id: '/support/submit-ticket'
+      path: '/submit-ticket'
+      fullPath: '/support/submit-ticket'
+      preLoaderRoute: typeof SupportSubmitTicketRouteImport
+      parentRoute: typeof SupportRoute
+    }
+    '/support/remote-assistance': {
+      id: '/support/remote-assistance'
+      path: '/remote-assistance'
+      fullPath: '/support/remote-assistance'
+      preLoaderRoute: typeof SupportRemoteAssistanceRouteImport
+      parentRoute: typeof SupportRoute
+    }
+    '/support/help-center': {
+      id: '/support/help-center'
+      path: '/help-center'
+      fullPath: '/support/help-center'
+      preLoaderRoute: typeof SupportHelpCenterRouteImport
+      parentRoute: typeof SupportRoute
+    }
+    '/support/contact-support': {
+      id: '/support/contact-support'
+      path: '/contact-support'
+      fullPath: '/support/contact-support'
+      preLoaderRoute: typeof SupportContactSupportRouteImport
+      parentRoute: typeof SupportRoute
+    }
+    '/solutions/universities': {
+      id: '/solutions/universities'
+      path: '/universities'
+      fullPath: '/solutions/universities'
+      preLoaderRoute: typeof SolutionsUniversitiesRouteImport
+      parentRoute: typeof SolutionsRoute
+    }
+    '/solutions/training-institutes': {
+      id: '/solutions/training-institutes'
+      path: '/training-institutes'
+      fullPath: '/solutions/training-institutes'
+      preLoaderRoute: typeof SolutionsTrainingInstitutesRouteImport
+      parentRoute: typeof SolutionsRoute
+    }
+    '/solutions/schools': {
+      id: '/solutions/schools'
+      path: '/schools'
+      fullPath: '/solutions/schools'
+      preLoaderRoute: typeof SolutionsSchoolsRouteImport
+      parentRoute: typeof SolutionsRoute
+    }
+    '/solutions/multi-campus': {
+      id: '/solutions/multi-campus'
+      path: '/multi-campus'
+      fullPath: '/solutions/multi-campus'
+      preLoaderRoute: typeof SolutionsMultiCampusRouteImport
+      parentRoute: typeof SolutionsRoute
+    }
+    '/solutions/colleges': {
+      id: '/solutions/colleges'
+      path: '/colleges'
+      fullPath: '/solutions/colleges'
+      preLoaderRoute: typeof SolutionsCollegesRouteImport
+      parentRoute: typeof SolutionsRoute
+    }
+    '/products/lms': {
+      id: '/products/lms'
+      path: '/products/lms'
+      fullPath: '/products/lms'
+      preLoaderRoute: typeof ProductsLmsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products/erp': {
+      id: '/products/erp'
+      path: '/products/erp'
+      fullPath: '/products/erp'
+      preLoaderRoute: typeof ProductsErpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing/starter': {
+      id: '/pricing/starter'
+      path: '/starter'
+      fullPath: '/pricing/starter'
+      preLoaderRoute: typeof PricingStarterRouteImport
+      parentRoute: typeof PricingRoute
+    }
+    '/pricing/professional': {
+      id: '/pricing/professional'
+      path: '/professional'
+      fullPath: '/pricing/professional'
+      preLoaderRoute: typeof PricingProfessionalRouteImport
+      parentRoute: typeof PricingRoute
+    }
+    '/pricing/enterprise': {
+      id: '/pricing/enterprise'
+      path: '/enterprise'
+      fullPath: '/pricing/enterprise'
+      preLoaderRoute: typeof PricingEnterpriseRouteImport
+      parentRoute: typeof PricingRoute
+    }
+    '/legal/terms': {
+      id: '/legal/terms'
+      path: '/legal/terms'
+      fullPath: '/legal/terms'
+      preLoaderRoute: typeof LegalTermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legal/refund-policy': {
+      id: '/legal/refund-policy'
+      path: '/legal/refund-policy'
+      fullPath: '/legal/refund-policy'
+      preLoaderRoute: typeof LegalRefundPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legal/privacy': {
+      id: '/legal/privacy'
+      path: '/legal/privacy'
+      fullPath: '/legal/privacy'
+      preLoaderRoute: typeof LegalPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legal/data-security': {
+      id: '/legal/data-security'
+      path: '/legal/data-security'
+      fullPath: '/legal/data-security'
+      preLoaderRoute: typeof LegalDataSecurityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legal/cookie-policy': {
+      id: '/legal/cookie-policy'
+      path: '/legal/cookie-policy'
+      fullPath: '/legal/cookie-policy'
+      preLoaderRoute: typeof LegalCookiePolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/knowledge-base/video-tutorials': {
+      id: '/knowledge-base/video-tutorials'
+      path: '/video-tutorials'
+      fullPath: '/knowledge-base/video-tutorials'
+      preLoaderRoute: typeof KnowledgeBaseVideoTutorialsRouteImport
+      parentRoute: typeof KnowledgeBaseRoute
+    }
+    '/knowledge-base/user-guides': {
+      id: '/knowledge-base/user-guides'
+      path: '/user-guides'
+      fullPath: '/knowledge-base/user-guides'
+      preLoaderRoute: typeof KnowledgeBaseUserGuidesRouteImport
+      parentRoute: typeof KnowledgeBaseRoute
+    }
+    '/knowledge-base/getting-started': {
+      id: '/knowledge-base/getting-started'
+      path: '/getting-started'
+      fullPath: '/knowledge-base/getting-started'
+      preLoaderRoute: typeof KnowledgeBaseGettingStartedRouteImport
+      parentRoute: typeof KnowledgeBaseRoute
+    }
+    '/knowledge-base/faqs': {
+      id: '/knowledge-base/faqs'
+      path: '/faqs'
+      fullPath: '/knowledge-base/faqs'
+      preLoaderRoute: typeof KnowledgeBaseFaqsRouteImport
+      parentRoute: typeof KnowledgeBaseRoute
+    }
+    '/knowledge-base/documentation': {
+      id: '/knowledge-base/documentation'
+      path: '/documentation'
+      fullPath: '/knowledge-base/documentation'
+      preLoaderRoute: typeof KnowledgeBaseDocumentationRouteImport
+      parentRoute: typeof KnowledgeBaseRoute
+    }
+    '/features/teacher-portal': {
+      id: '/features/teacher-portal'
+      path: '/teacher-portal'
+      fullPath: '/features/teacher-portal'
+      preLoaderRoute: typeof FeaturesTeacherPortalRouteImport
+      parentRoute: typeof FeaturesRoute
+    }
+    '/features/student-management': {
+      id: '/features/student-management'
+      path: '/student-management'
+      fullPath: '/features/student-management'
+      preLoaderRoute: typeof FeaturesStudentManagementRouteImport
+      parentRoute: typeof FeaturesRoute
+    }
+    '/features/parent-portal': {
+      id: '/features/parent-portal'
+      path: '/parent-portal'
+      fullPath: '/features/parent-portal'
+      preLoaderRoute: typeof FeaturesParentPortalRouteImport
+      parentRoute: typeof FeaturesRoute
+    }
+    '/features/analytics': {
+      id: '/features/analytics'
+      path: '/analytics'
+      fullPath: '/features/analytics'
+      preLoaderRoute: typeof FeaturesAnalyticsRouteImport
+      parentRoute: typeof FeaturesRoute
+    }
+    '/contact/schedule-demo': {
+      id: '/contact/schedule-demo'
+      path: '/schedule-demo'
+      fullPath: '/contact/schedule-demo'
+      preLoaderRoute: typeof ContactScheduleDemoRouteImport
+      parentRoute: typeof ContactRoute
+    }
+    '/contact/request-pricing': {
+      id: '/contact/request-pricing'
+      path: '/request-pricing'
+      fullPath: '/contact/request-pricing'
+      preLoaderRoute: typeof ContactRequestPricingRouteImport
+      parentRoute: typeof ContactRoute
+    }
+    '/contact/book-consultation': {
+      id: '/contact/book-consultation'
+      path: '/book-consultation'
+      fullPath: '/contact/book-consultation'
+      preLoaderRoute: typeof ContactBookConsultationRouteImport
+      parentRoute: typeof ContactRoute
+    }
+    '/case-studies/university-transformation': {
+      id: '/case-studies/university-transformation'
+      path: '/university-transformation'
+      fullPath: '/case-studies/university-transformation'
+      preLoaderRoute: typeof CaseStudiesUniversityTransformationRouteImport
+      parentRoute: typeof CaseStudiesRoute
+    }
+    '/case-studies/school-success-story': {
+      id: '/case-studies/school-success-story'
+      path: '/school-success-story'
+      fullPath: '/case-studies/school-success-story'
+      preLoaderRoute: typeof CaseStudiesSchoolSuccessStoryRouteImport
+      parentRoute: typeof CaseStudiesRoute
+    }
+    '/case-studies/multi-campus-deployment': {
+      id: '/case-studies/multi-campus-deployment'
+      path: '/multi-campus-deployment'
+      fullPath: '/case-studies/multi-campus-deployment'
+      preLoaderRoute: typeof CaseStudiesMultiCampusDeploymentRouteImport
+      parentRoute: typeof CaseStudiesRoute
+    }
+    '/careers/apply': {
+      id: '/careers/apply'
+      path: '/apply'
+      fullPath: '/careers/apply'
+      preLoaderRoute: typeof CareersApplyRouteImport
+      parentRoute: typeof CareersRoute
+    }
+    '/blog/school-management': {
+      id: '/blog/school-management'
+      path: '/school-management'
+      fullPath: '/blog/school-management'
+      preLoaderRoute: typeof BlogSchoolManagementRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/lms-trends': {
+      id: '/blog/lms-trends'
+      path: '/lms-trends'
+      fullPath: '/blog/lms-trends'
+      preLoaderRoute: typeof BlogLmsTrendsRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/how-erp-improves-school-management': {
+      id: '/blog/how-erp-improves-school-management'
+      path: '/how-erp-improves-school-management'
+      fullPath: '/blog/how-erp-improves-school-management'
+      preLoaderRoute: typeof BlogHowErpImprovesSchoolManagementRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/higher-education': {
+      id: '/blog/higher-education'
+      path: '/higher-education'
+      fullPath: '/blog/higher-education'
+      preLoaderRoute: typeof BlogHigherEducationRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/erp-solutions': {
+      id: '/blog/erp-solutions'
+      path: '/erp-solutions'
+      fullPath: '/blog/erp-solutions'
+      preLoaderRoute: typeof BlogErpSolutionsRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/education-technology': {
+      id: '/blog/education-technology'
+      path: '/education-technology'
+      fullPath: '/blog/education-technology'
+      preLoaderRoute: typeof BlogEducationTechnologyRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/digital-transformation-in-higher-education': {
+      id: '/blog/digital-transformation-in-higher-education'
+      path: '/digital-transformation-in-higher-education'
+      fullPath: '/blog/digital-transformation-in-higher-education'
+      preLoaderRoute: typeof BlogDigitalTransformationInHigherEducationRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/digital-transformation': {
+      id: '/blog/digital-transformation'
+      path: '/digital-transformation'
+      fullPath: '/blog/digital-transformation'
+      preLoaderRoute: typeof BlogDigitalTransformationRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/choosing-an-lms-for-your-college': {
+      id: '/blog/choosing-an-lms-for-your-college'
+      path: '/choosing-an-lms-for-your-college'
+      fullPath: '/blog/choosing-an-lms-for-your-college'
+      preLoaderRoute: typeof BlogChoosingAnLmsForYourCollegeRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/products/lms/video-learning': {
+      id: '/products/lms/video-learning'
+      path: '/video-learning'
+      fullPath: '/products/lms/video-learning'
+      preLoaderRoute: typeof ProductsLmsVideoLearningRouteImport
+      parentRoute: typeof ProductsLmsRoute
+    }
+    '/products/lms/quizzes': {
+      id: '/products/lms/quizzes'
+      path: '/quizzes'
+      fullPath: '/products/lms/quizzes'
+      preLoaderRoute: typeof ProductsLmsQuizzesRouteImport
+      parentRoute: typeof ProductsLmsRoute
+    }
+    '/products/lms/progress-tracking': {
+      id: '/products/lms/progress-tracking'
+      path: '/progress-tracking'
+      fullPath: '/products/lms/progress-tracking'
+      preLoaderRoute: typeof ProductsLmsProgressTrackingRouteImport
+      parentRoute: typeof ProductsLmsRoute
+    }
+    '/products/lms/online-classes': {
+      id: '/products/lms/online-classes'
+      path: '/online-classes'
+      fullPath: '/products/lms/online-classes'
+      preLoaderRoute: typeof ProductsLmsOnlineClassesRouteImport
+      parentRoute: typeof ProductsLmsRoute
+    }
+    '/products/lms/course-management': {
+      id: '/products/lms/course-management'
+      path: '/course-management'
+      fullPath: '/products/lms/course-management'
+      preLoaderRoute: typeof ProductsLmsCourseManagementRouteImport
+      parentRoute: typeof ProductsLmsRoute
+    }
+    '/products/lms/certificates': {
+      id: '/products/lms/certificates'
+      path: '/certificates'
+      fullPath: '/products/lms/certificates'
+      preLoaderRoute: typeof ProductsLmsCertificatesRouteImport
+      parentRoute: typeof ProductsLmsRoute
+    }
+    '/products/lms/assignments': {
+      id: '/products/lms/assignments'
+      path: '/assignments'
+      fullPath: '/products/lms/assignments'
+      preLoaderRoute: typeof ProductsLmsAssignmentsRouteImport
+      parentRoute: typeof ProductsLmsRoute
+    }
+    '/products/erp/transport': {
+      id: '/products/erp/transport'
+      path: '/transport'
+      fullPath: '/products/erp/transport'
+      preLoaderRoute: typeof ProductsErpTransportRouteImport
+      parentRoute: typeof ProductsErpRoute
+    }
+    '/products/erp/student-information': {
+      id: '/products/erp/student-information'
+      path: '/student-information'
+      fullPath: '/products/erp/student-information'
+      preLoaderRoute: typeof ProductsErpStudentInformationRouteImport
+      parentRoute: typeof ProductsErpRoute
+    }
+    '/products/erp/library': {
+      id: '/products/erp/library'
+      path: '/library'
+      fullPath: '/products/erp/library'
+      preLoaderRoute: typeof ProductsErpLibraryRouteImport
+      parentRoute: typeof ProductsErpRoute
+    }
+    '/products/erp/hr-payroll': {
+      id: '/products/erp/hr-payroll'
+      path: '/hr-payroll'
+      fullPath: '/products/erp/hr-payroll'
+      preLoaderRoute: typeof ProductsErpHrPayrollRouteImport
+      parentRoute: typeof ProductsErpRoute
+    }
+    '/products/erp/hostel': {
+      id: '/products/erp/hostel'
+      path: '/hostel'
+      fullPath: '/products/erp/hostel'
+      preLoaderRoute: typeof ProductsErpHostelRouteImport
+      parentRoute: typeof ProductsErpRoute
+    }
+    '/products/erp/fees': {
+      id: '/products/erp/fees'
+      path: '/fees'
+      fullPath: '/products/erp/fees'
+      preLoaderRoute: typeof ProductsErpFeesRouteImport
+      parentRoute: typeof ProductsErpRoute
+    }
+    '/products/erp/examinations': {
+      id: '/products/erp/examinations'
+      path: '/examinations'
+      fullPath: '/products/erp/examinations'
+      preLoaderRoute: typeof ProductsErpExaminationsRouteImport
+      parentRoute: typeof ProductsErpRoute
+    }
+    '/products/erp/attendance': {
+      id: '/products/erp/attendance'
+      path: '/attendance'
+      fullPath: '/products/erp/attendance'
+      preLoaderRoute: typeof ProductsErpAttendanceRouteImport
+      parentRoute: typeof ProductsErpRoute
+    }
+    '/products/erp/admissions': {
+      id: '/products/erp/admissions'
+      path: '/admissions'
+      fullPath: '/products/erp/admissions'
+      preLoaderRoute: typeof ProductsErpAdmissionsRouteImport
+      parentRoute: typeof ProductsErpRoute
+    }
+    '/features/teacher-portal/reports': {
+      id: '/features/teacher-portal/reports'
+      path: '/reports'
+      fullPath: '/features/teacher-portal/reports'
+      preLoaderRoute: typeof FeaturesTeacherPortalReportsRouteImport
+      parentRoute: typeof FeaturesTeacherPortalRoute
+    }
+    '/features/teacher-portal/class-management': {
+      id: '/features/teacher-portal/class-management'
+      path: '/class-management'
+      fullPath: '/features/teacher-portal/class-management'
+      preLoaderRoute: typeof FeaturesTeacherPortalClassManagementRouteImport
+      parentRoute: typeof FeaturesTeacherPortalRoute
+    }
+    '/features/teacher-portal/attendance': {
+      id: '/features/teacher-portal/attendance'
+      path: '/attendance'
+      fullPath: '/features/teacher-portal/attendance'
+      preLoaderRoute: typeof FeaturesTeacherPortalAttendanceRouteImport
+      parentRoute: typeof FeaturesTeacherPortalRoute
+    }
+    '/features/teacher-portal/assignments': {
+      id: '/features/teacher-portal/assignments'
+      path: '/assignments'
+      fullPath: '/features/teacher-portal/assignments'
+      preLoaderRoute: typeof FeaturesTeacherPortalAssignmentsRouteImport
+      parentRoute: typeof FeaturesTeacherPortalRoute
+    }
+    '/features/student-management/profiles': {
+      id: '/features/student-management/profiles'
+      path: '/profiles'
+      fullPath: '/features/student-management/profiles'
+      preLoaderRoute: typeof FeaturesStudentManagementProfilesRouteImport
+      parentRoute: typeof FeaturesStudentManagementRoute
+    }
+    '/features/student-management/parent-info': {
+      id: '/features/student-management/parent-info'
+      path: '/parent-info'
+      fullPath: '/features/student-management/parent-info'
+      preLoaderRoute: typeof FeaturesStudentManagementParentInfoRouteImport
+      parentRoute: typeof FeaturesStudentManagementRoute
+    }
+    '/features/student-management/documents': {
+      id: '/features/student-management/documents'
+      path: '/documents'
+      fullPath: '/features/student-management/documents'
+      preLoaderRoute: typeof FeaturesStudentManagementDocumentsRouteImport
+      parentRoute: typeof FeaturesStudentManagementRoute
+    }
+    '/features/student-management/academic-records': {
+      id: '/features/student-management/academic-records'
+      path: '/academic-records'
+      fullPath: '/features/student-management/academic-records'
+      preLoaderRoute: typeof FeaturesStudentManagementAcademicRecordsRouteImport
+      parentRoute: typeof FeaturesStudentManagementRoute
+    }
+    '/features/parent-portal/results': {
+      id: '/features/parent-portal/results'
+      path: '/results'
+      fullPath: '/features/parent-portal/results'
+      preLoaderRoute: typeof FeaturesParentPortalResultsRouteImport
+      parentRoute: typeof FeaturesParentPortalRoute
+    }
+    '/features/parent-portal/fee-payments': {
+      id: '/features/parent-portal/fee-payments'
+      path: '/fee-payments'
+      fullPath: '/features/parent-portal/fee-payments'
+      preLoaderRoute: typeof FeaturesParentPortalFeePaymentsRouteImport
+      parentRoute: typeof FeaturesParentPortalRoute
+    }
+    '/features/parent-portal/communication': {
+      id: '/features/parent-portal/communication'
+      path: '/communication'
+      fullPath: '/features/parent-portal/communication'
+      preLoaderRoute: typeof FeaturesParentPortalCommunicationRouteImport
+      parentRoute: typeof FeaturesParentPortalRoute
+    }
+    '/features/parent-portal/attendance': {
+      id: '/features/parent-portal/attendance'
+      path: '/attendance'
+      fullPath: '/features/parent-portal/attendance'
+      preLoaderRoute: typeof FeaturesParentPortalAttendanceRouteImport
+      parentRoute: typeof FeaturesParentPortalRoute
+    }
+    '/features/analytics/reports': {
+      id: '/features/analytics/reports'
+      path: '/reports'
+      fullPath: '/features/analytics/reports'
+      preLoaderRoute: typeof FeaturesAnalyticsReportsRouteImport
+      parentRoute: typeof FeaturesAnalyticsRoute
+    }
+    '/features/analytics/kpis': {
+      id: '/features/analytics/kpis'
+      path: '/kpis'
+      fullPath: '/features/analytics/kpis'
+      preLoaderRoute: typeof FeaturesAnalyticsKpisRouteImport
+      parentRoute: typeof FeaturesAnalyticsRoute
+    }
+    '/features/analytics/insights': {
+      id: '/features/analytics/insights'
+      path: '/insights'
+      fullPath: '/features/analytics/insights'
+      preLoaderRoute: typeof FeaturesAnalyticsInsightsRouteImport
+      parentRoute: typeof FeaturesAnalyticsRoute
+    }
   }
 }
+
+interface BlogRouteChildren {
+  BlogChoosingAnLmsForYourCollegeRoute: typeof BlogChoosingAnLmsForYourCollegeRoute
+  BlogDigitalTransformationRoute: typeof BlogDigitalTransformationRoute
+  BlogDigitalTransformationInHigherEducationRoute: typeof BlogDigitalTransformationInHigherEducationRoute
+  BlogEducationTechnologyRoute: typeof BlogEducationTechnologyRoute
+  BlogErpSolutionsRoute: typeof BlogErpSolutionsRoute
+  BlogHigherEducationRoute: typeof BlogHigherEducationRoute
+  BlogHowErpImprovesSchoolManagementRoute: typeof BlogHowErpImprovesSchoolManagementRoute
+  BlogLmsTrendsRoute: typeof BlogLmsTrendsRoute
+  BlogSchoolManagementRoute: typeof BlogSchoolManagementRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
+  BlogChoosingAnLmsForYourCollegeRoute: BlogChoosingAnLmsForYourCollegeRoute,
+  BlogDigitalTransformationRoute: BlogDigitalTransformationRoute,
+  BlogDigitalTransformationInHigherEducationRoute:
+    BlogDigitalTransformationInHigherEducationRoute,
+  BlogEducationTechnologyRoute: BlogEducationTechnologyRoute,
+  BlogErpSolutionsRoute: BlogErpSolutionsRoute,
+  BlogHigherEducationRoute: BlogHigherEducationRoute,
+  BlogHowErpImprovesSchoolManagementRoute:
+    BlogHowErpImprovesSchoolManagementRoute,
+  BlogLmsTrendsRoute: BlogLmsTrendsRoute,
+  BlogSchoolManagementRoute: BlogSchoolManagementRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
+interface CareersRouteChildren {
+  CareersApplyRoute: typeof CareersApplyRoute
+}
+
+const CareersRouteChildren: CareersRouteChildren = {
+  CareersApplyRoute: CareersApplyRoute,
+}
+
+const CareersRouteWithChildren =
+  CareersRoute._addFileChildren(CareersRouteChildren)
+
+interface CaseStudiesRouteChildren {
+  CaseStudiesMultiCampusDeploymentRoute: typeof CaseStudiesMultiCampusDeploymentRoute
+  CaseStudiesSchoolSuccessStoryRoute: typeof CaseStudiesSchoolSuccessStoryRoute
+  CaseStudiesUniversityTransformationRoute: typeof CaseStudiesUniversityTransformationRoute
+}
+
+const CaseStudiesRouteChildren: CaseStudiesRouteChildren = {
+  CaseStudiesMultiCampusDeploymentRoute: CaseStudiesMultiCampusDeploymentRoute,
+  CaseStudiesSchoolSuccessStoryRoute: CaseStudiesSchoolSuccessStoryRoute,
+  CaseStudiesUniversityTransformationRoute:
+    CaseStudiesUniversityTransformationRoute,
+}
+
+const CaseStudiesRouteWithChildren = CaseStudiesRoute._addFileChildren(
+  CaseStudiesRouteChildren,
+)
+
+interface ContactRouteChildren {
+  ContactBookConsultationRoute: typeof ContactBookConsultationRoute
+  ContactRequestPricingRoute: typeof ContactRequestPricingRoute
+  ContactScheduleDemoRoute: typeof ContactScheduleDemoRoute
+}
+
+const ContactRouteChildren: ContactRouteChildren = {
+  ContactBookConsultationRoute: ContactBookConsultationRoute,
+  ContactRequestPricingRoute: ContactRequestPricingRoute,
+  ContactScheduleDemoRoute: ContactScheduleDemoRoute,
+}
+
+const ContactRouteWithChildren =
+  ContactRoute._addFileChildren(ContactRouteChildren)
+
+interface FeaturesAnalyticsRouteChildren {
+  FeaturesAnalyticsInsightsRoute: typeof FeaturesAnalyticsInsightsRoute
+  FeaturesAnalyticsKpisRoute: typeof FeaturesAnalyticsKpisRoute
+  FeaturesAnalyticsReportsRoute: typeof FeaturesAnalyticsReportsRoute
+}
+
+const FeaturesAnalyticsRouteChildren: FeaturesAnalyticsRouteChildren = {
+  FeaturesAnalyticsInsightsRoute: FeaturesAnalyticsInsightsRoute,
+  FeaturesAnalyticsKpisRoute: FeaturesAnalyticsKpisRoute,
+  FeaturesAnalyticsReportsRoute: FeaturesAnalyticsReportsRoute,
+}
+
+const FeaturesAnalyticsRouteWithChildren =
+  FeaturesAnalyticsRoute._addFileChildren(FeaturesAnalyticsRouteChildren)
+
+interface FeaturesParentPortalRouteChildren {
+  FeaturesParentPortalAttendanceRoute: typeof FeaturesParentPortalAttendanceRoute
+  FeaturesParentPortalCommunicationRoute: typeof FeaturesParentPortalCommunicationRoute
+  FeaturesParentPortalFeePaymentsRoute: typeof FeaturesParentPortalFeePaymentsRoute
+  FeaturesParentPortalResultsRoute: typeof FeaturesParentPortalResultsRoute
+}
+
+const FeaturesParentPortalRouteChildren: FeaturesParentPortalRouteChildren = {
+  FeaturesParentPortalAttendanceRoute: FeaturesParentPortalAttendanceRoute,
+  FeaturesParentPortalCommunicationRoute:
+    FeaturesParentPortalCommunicationRoute,
+  FeaturesParentPortalFeePaymentsRoute: FeaturesParentPortalFeePaymentsRoute,
+  FeaturesParentPortalResultsRoute: FeaturesParentPortalResultsRoute,
+}
+
+const FeaturesParentPortalRouteWithChildren =
+  FeaturesParentPortalRoute._addFileChildren(FeaturesParentPortalRouteChildren)
+
+interface FeaturesStudentManagementRouteChildren {
+  FeaturesStudentManagementAcademicRecordsRoute: typeof FeaturesStudentManagementAcademicRecordsRoute
+  FeaturesStudentManagementDocumentsRoute: typeof FeaturesStudentManagementDocumentsRoute
+  FeaturesStudentManagementParentInfoRoute: typeof FeaturesStudentManagementParentInfoRoute
+  FeaturesStudentManagementProfilesRoute: typeof FeaturesStudentManagementProfilesRoute
+}
+
+const FeaturesStudentManagementRouteChildren: FeaturesStudentManagementRouteChildren =
+  {
+    FeaturesStudentManagementAcademicRecordsRoute:
+      FeaturesStudentManagementAcademicRecordsRoute,
+    FeaturesStudentManagementDocumentsRoute:
+      FeaturesStudentManagementDocumentsRoute,
+    FeaturesStudentManagementParentInfoRoute:
+      FeaturesStudentManagementParentInfoRoute,
+    FeaturesStudentManagementProfilesRoute:
+      FeaturesStudentManagementProfilesRoute,
+  }
+
+const FeaturesStudentManagementRouteWithChildren =
+  FeaturesStudentManagementRoute._addFileChildren(
+    FeaturesStudentManagementRouteChildren,
+  )
+
+interface FeaturesTeacherPortalRouteChildren {
+  FeaturesTeacherPortalAssignmentsRoute: typeof FeaturesTeacherPortalAssignmentsRoute
+  FeaturesTeacherPortalAttendanceRoute: typeof FeaturesTeacherPortalAttendanceRoute
+  FeaturesTeacherPortalClassManagementRoute: typeof FeaturesTeacherPortalClassManagementRoute
+  FeaturesTeacherPortalReportsRoute: typeof FeaturesTeacherPortalReportsRoute
+}
+
+const FeaturesTeacherPortalRouteChildren: FeaturesTeacherPortalRouteChildren = {
+  FeaturesTeacherPortalAssignmentsRoute: FeaturesTeacherPortalAssignmentsRoute,
+  FeaturesTeacherPortalAttendanceRoute: FeaturesTeacherPortalAttendanceRoute,
+  FeaturesTeacherPortalClassManagementRoute:
+    FeaturesTeacherPortalClassManagementRoute,
+  FeaturesTeacherPortalReportsRoute: FeaturesTeacherPortalReportsRoute,
+}
+
+const FeaturesTeacherPortalRouteWithChildren =
+  FeaturesTeacherPortalRoute._addFileChildren(
+    FeaturesTeacherPortalRouteChildren,
+  )
+
+interface FeaturesRouteChildren {
+  FeaturesAnalyticsRoute: typeof FeaturesAnalyticsRouteWithChildren
+  FeaturesParentPortalRoute: typeof FeaturesParentPortalRouteWithChildren
+  FeaturesStudentManagementRoute: typeof FeaturesStudentManagementRouteWithChildren
+  FeaturesTeacherPortalRoute: typeof FeaturesTeacherPortalRouteWithChildren
+}
+
+const FeaturesRouteChildren: FeaturesRouteChildren = {
+  FeaturesAnalyticsRoute: FeaturesAnalyticsRouteWithChildren,
+  FeaturesParentPortalRoute: FeaturesParentPortalRouteWithChildren,
+  FeaturesStudentManagementRoute: FeaturesStudentManagementRouteWithChildren,
+  FeaturesTeacherPortalRoute: FeaturesTeacherPortalRouteWithChildren,
+}
+
+const FeaturesRouteWithChildren = FeaturesRoute._addFileChildren(
+  FeaturesRouteChildren,
+)
+
+interface KnowledgeBaseRouteChildren {
+  KnowledgeBaseDocumentationRoute: typeof KnowledgeBaseDocumentationRoute
+  KnowledgeBaseFaqsRoute: typeof KnowledgeBaseFaqsRoute
+  KnowledgeBaseGettingStartedRoute: typeof KnowledgeBaseGettingStartedRoute
+  KnowledgeBaseUserGuidesRoute: typeof KnowledgeBaseUserGuidesRoute
+  KnowledgeBaseVideoTutorialsRoute: typeof KnowledgeBaseVideoTutorialsRoute
+}
+
+const KnowledgeBaseRouteChildren: KnowledgeBaseRouteChildren = {
+  KnowledgeBaseDocumentationRoute: KnowledgeBaseDocumentationRoute,
+  KnowledgeBaseFaqsRoute: KnowledgeBaseFaqsRoute,
+  KnowledgeBaseGettingStartedRoute: KnowledgeBaseGettingStartedRoute,
+  KnowledgeBaseUserGuidesRoute: KnowledgeBaseUserGuidesRoute,
+  KnowledgeBaseVideoTutorialsRoute: KnowledgeBaseVideoTutorialsRoute,
+}
+
+const KnowledgeBaseRouteWithChildren = KnowledgeBaseRoute._addFileChildren(
+  KnowledgeBaseRouteChildren,
+)
+
+interface PricingRouteChildren {
+  PricingEnterpriseRoute: typeof PricingEnterpriseRoute
+  PricingProfessionalRoute: typeof PricingProfessionalRoute
+  PricingStarterRoute: typeof PricingStarterRoute
+}
+
+const PricingRouteChildren: PricingRouteChildren = {
+  PricingEnterpriseRoute: PricingEnterpriseRoute,
+  PricingProfessionalRoute: PricingProfessionalRoute,
+  PricingStarterRoute: PricingStarterRoute,
+}
+
+const PricingRouteWithChildren =
+  PricingRoute._addFileChildren(PricingRouteChildren)
+
+interface SolutionsRouteChildren {
+  SolutionsCollegesRoute: typeof SolutionsCollegesRoute
+  SolutionsMultiCampusRoute: typeof SolutionsMultiCampusRoute
+  SolutionsSchoolsRoute: typeof SolutionsSchoolsRoute
+  SolutionsTrainingInstitutesRoute: typeof SolutionsTrainingInstitutesRoute
+  SolutionsUniversitiesRoute: typeof SolutionsUniversitiesRoute
+}
+
+const SolutionsRouteChildren: SolutionsRouteChildren = {
+  SolutionsCollegesRoute: SolutionsCollegesRoute,
+  SolutionsMultiCampusRoute: SolutionsMultiCampusRoute,
+  SolutionsSchoolsRoute: SolutionsSchoolsRoute,
+  SolutionsTrainingInstitutesRoute: SolutionsTrainingInstitutesRoute,
+  SolutionsUniversitiesRoute: SolutionsUniversitiesRoute,
+}
+
+const SolutionsRouteWithChildren = SolutionsRoute._addFileChildren(
+  SolutionsRouteChildren,
+)
+
+interface SupportRouteChildren {
+  SupportContactSupportRoute: typeof SupportContactSupportRoute
+  SupportHelpCenterRoute: typeof SupportHelpCenterRoute
+  SupportRemoteAssistanceRoute: typeof SupportRemoteAssistanceRoute
+  SupportSubmitTicketRoute: typeof SupportSubmitTicketRoute
+  SupportSystemStatusRoute: typeof SupportSystemStatusRoute
+}
+
+const SupportRouteChildren: SupportRouteChildren = {
+  SupportContactSupportRoute: SupportContactSupportRoute,
+  SupportHelpCenterRoute: SupportHelpCenterRoute,
+  SupportRemoteAssistanceRoute: SupportRemoteAssistanceRoute,
+  SupportSubmitTicketRoute: SupportSubmitTicketRoute,
+  SupportSystemStatusRoute: SupportSystemStatusRoute,
+}
+
+const SupportRouteWithChildren =
+  SupportRoute._addFileChildren(SupportRouteChildren)
+
+interface TestimonialsRouteChildren {
+  TestimonialsCollegesRoute: typeof TestimonialsCollegesRoute
+  TestimonialsSchoolsRoute: typeof TestimonialsSchoolsRoute
+  TestimonialsUniversitiesRoute: typeof TestimonialsUniversitiesRoute
+}
+
+const TestimonialsRouteChildren: TestimonialsRouteChildren = {
+  TestimonialsCollegesRoute: TestimonialsCollegesRoute,
+  TestimonialsSchoolsRoute: TestimonialsSchoolsRoute,
+  TestimonialsUniversitiesRoute: TestimonialsUniversitiesRoute,
+}
+
+const TestimonialsRouteWithChildren = TestimonialsRoute._addFileChildren(
+  TestimonialsRouteChildren,
+)
+
+interface ProductsErpRouteChildren {
+  ProductsErpAdmissionsRoute: typeof ProductsErpAdmissionsRoute
+  ProductsErpAttendanceRoute: typeof ProductsErpAttendanceRoute
+  ProductsErpExaminationsRoute: typeof ProductsErpExaminationsRoute
+  ProductsErpFeesRoute: typeof ProductsErpFeesRoute
+  ProductsErpHostelRoute: typeof ProductsErpHostelRoute
+  ProductsErpHrPayrollRoute: typeof ProductsErpHrPayrollRoute
+  ProductsErpLibraryRoute: typeof ProductsErpLibraryRoute
+  ProductsErpStudentInformationRoute: typeof ProductsErpStudentInformationRoute
+  ProductsErpTransportRoute: typeof ProductsErpTransportRoute
+}
+
+const ProductsErpRouteChildren: ProductsErpRouteChildren = {
+  ProductsErpAdmissionsRoute: ProductsErpAdmissionsRoute,
+  ProductsErpAttendanceRoute: ProductsErpAttendanceRoute,
+  ProductsErpExaminationsRoute: ProductsErpExaminationsRoute,
+  ProductsErpFeesRoute: ProductsErpFeesRoute,
+  ProductsErpHostelRoute: ProductsErpHostelRoute,
+  ProductsErpHrPayrollRoute: ProductsErpHrPayrollRoute,
+  ProductsErpLibraryRoute: ProductsErpLibraryRoute,
+  ProductsErpStudentInformationRoute: ProductsErpStudentInformationRoute,
+  ProductsErpTransportRoute: ProductsErpTransportRoute,
+}
+
+const ProductsErpRouteWithChildren = ProductsErpRoute._addFileChildren(
+  ProductsErpRouteChildren,
+)
+
+interface ProductsLmsRouteChildren {
+  ProductsLmsAssignmentsRoute: typeof ProductsLmsAssignmentsRoute
+  ProductsLmsCertificatesRoute: typeof ProductsLmsCertificatesRoute
+  ProductsLmsCourseManagementRoute: typeof ProductsLmsCourseManagementRoute
+  ProductsLmsOnlineClassesRoute: typeof ProductsLmsOnlineClassesRoute
+  ProductsLmsProgressTrackingRoute: typeof ProductsLmsProgressTrackingRoute
+  ProductsLmsQuizzesRoute: typeof ProductsLmsQuizzesRoute
+  ProductsLmsVideoLearningRoute: typeof ProductsLmsVideoLearningRoute
+}
+
+const ProductsLmsRouteChildren: ProductsLmsRouteChildren = {
+  ProductsLmsAssignmentsRoute: ProductsLmsAssignmentsRoute,
+  ProductsLmsCertificatesRoute: ProductsLmsCertificatesRoute,
+  ProductsLmsCourseManagementRoute: ProductsLmsCourseManagementRoute,
+  ProductsLmsOnlineClassesRoute: ProductsLmsOnlineClassesRoute,
+  ProductsLmsProgressTrackingRoute: ProductsLmsProgressTrackingRoute,
+  ProductsLmsQuizzesRoute: ProductsLmsQuizzesRoute,
+  ProductsLmsVideoLearningRoute: ProductsLmsVideoLearningRoute,
+}
+
+const ProductsLmsRouteWithChildren = ProductsLmsRoute._addFileChildren(
+  ProductsLmsRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  ContactRoute: ContactRoute,
-  FeaturesRoute: FeaturesRoute,
-  PricingRoute: PricingRoute,
+  BlogRoute: BlogRouteWithChildren,
+  CareersRoute: CareersRouteWithChildren,
+  CaseStudiesRoute: CaseStudiesRouteWithChildren,
+  ContactRoute: ContactRouteWithChildren,
+  FeaturesRoute: FeaturesRouteWithChildren,
+  KnowledgeBaseRoute: KnowledgeBaseRouteWithChildren,
+  LeadershipRoute: LeadershipRoute,
+  PricingRoute: PricingRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
-  SolutionsRoute: SolutionsRoute,
-  TestimonialsRoute: TestimonialsRoute,
+  SolutionsRoute: SolutionsRouteWithChildren,
+  SupportRoute: SupportRouteWithChildren,
+  TestimonialsRoute: TestimonialsRouteWithChildren,
+  LegalCookiePolicyRoute: LegalCookiePolicyRoute,
+  LegalDataSecurityRoute: LegalDataSecurityRoute,
+  LegalPrivacyRoute: LegalPrivacyRoute,
+  LegalRefundPolicyRoute: LegalRefundPolicyRoute,
+  LegalTermsRoute: LegalTermsRoute,
+  ProductsErpRoute: ProductsErpRouteWithChildren,
+  ProductsLmsRoute: ProductsLmsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
