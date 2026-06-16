@@ -237,14 +237,14 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2.6fr]">
           <div>
-            <img src={logo.url} alt="Smart Campuses" className="h-10 w-auto brightness-0 invert" />
+            <img src={logo.url} alt="Smart Campus" className="h-10 w-auto brightness-0 invert" />
             <p className="mt-4 max-w-xs text-sm text-secondary-foreground/70">
-              Cloud-based ERP & LMS purpose-built for modern educational institutions.
+              Finland's #1 cloud-based University Management System. 50+ modules, 24/7 support, one platform for every device.
             </p>
             <div className="mt-6 space-y-2 text-sm text-secondary-foreground/80">
-              <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /> 221B Knowledge Park, New Delhi</div>
-              <div className="flex items-center gap-2"><Phone className="h-4 w-4" /> +91 98765 43210</div>
-              <div className="flex items-center gap-2"><Mail className="h-4 w-4" /> hello@smartcampuses.app</div>
+              <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Helsinki, Finland</div>
+              <div className="flex items-center gap-2"><Phone className="h-4 w-4" /> +358 9 123 4567</div>
+              <div className="flex items-center gap-2"><Mail className="h-4 w-4" /> hello@smartcampus.fi</div>
             </div>
           </div>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -267,7 +267,7 @@ function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-6 text-xs text-secondary-foreground/60">
-          © 2026 Smart Campuses. All Rights Reserved.
+          © 2026 Smart Campus. All Rights Reserved.
         </div>
       </div>
     </footer>

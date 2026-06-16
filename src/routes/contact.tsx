@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { MapPin, Phone, Mail, Globe, Send, CheckCircle2 } from "lucide-react";
+import { MapPin, Phone, Mail, Globe, Send, CheckCircle2, Clock } from "lucide-react";
 import { PageHero } from "@/components/ui-bits";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Smart Campuses" },
-      { name: "description", content: "Get a personalized demo of Smart Campuses. Our team is ready to help you find the perfect ERP & LMS solution." },
-      { property: "og:title", content: "Contact Smart Campuses" },
+      { title: "Contact — Smart Campus | Finland's #1 Education Management System" },
+      { name: "description", content: "Get a personalized demo of Smart Campus. 24/7 dedicated support trusted by schools, colleges and universities across Finland." },
+      { property: "og:title", content: "Contact Smart Campus" },
       { property: "og:description", content: "Let's transform education together." },
     ],
   }),
@@ -22,23 +22,27 @@ function Contact() {
       <PageHero
         eyebrow="Contact"
         title={<>Let's transform <span className="text-gradient-brand">education together.</span></>}
-        description="Have questions or want a personalized demo? Our team is ready to help you find the perfect solution for your institution."
+        description="Have questions or want a personalized demo? Our Finland-based team offers 24/7 dedicated support and is ready to help you find the perfect UMS & LMS solution for your institution."
       />
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-24 lg:grid-cols-[1fr_1.3fr]">
         <div className="space-y-6">
           <div className="rounded-3xl border border-border bg-card p-8 shadow-card">
             <h2 className="text-xl font-semibold">Contact information</h2>
             <ul className="mt-6 space-y-4 text-sm">
-              <li className="flex gap-3"><MapPin className="h-5 w-5 text-brand" /><span>221B Knowledge Park,<br /> New Delhi, India 110001</span></li>
-              <li className="flex gap-3"><Phone className="h-5 w-5 text-brand" /><span>+91 98765 43210</span></li>
-              <li className="flex gap-3"><Mail className="h-5 w-5 text-brand" /><span>hello@smartcampuses.app</span></li>
-              <li className="flex gap-3"><Globe className="h-5 w-5 text-brand" /><span>www.smartcampuses.app</span></li>
+              <li className="flex gap-3"><MapPin className="h-5 w-5 text-brand" /><span>Helsinki, Finland</span></li>
+              <li className="flex gap-3"><Phone className="h-5 w-5 text-brand" /><span>+358 9 123 4567</span></li>
+              <li className="flex gap-3"><Mail className="h-5 w-5 text-brand" /><span>hello@smartcampus.fi</span></li>
+              <li className="flex gap-3"><Globe className="h-5 w-5 text-brand" /><span>www.smartcampus.fi</span></li>
             </ul>
           </div>
           <div className="rounded-3xl bg-gradient-brand p-8 text-primary-foreground shadow-elegant">
-            <h3 className="text-xl font-semibold">Talk to a specialist</h3>
+            <div className="flex items-center gap-2">
+              <Clock className="h-5 w-5" />
+              <h3 className="text-xl font-semibold">24/7 Dedicated Support</h3>
+            </div>
             <p className="mt-2 text-sm text-primary-foreground/85">
-              Walk through Smart Campuses live with an expert and get a tailored quote within 24 hours.
+              Walk through Smart Campus live with an expert and get a tailored quote within 24 hours.
+              Trusted by schools, colleges and universities across Helsinki and all of Finland.
             </p>
           </div>
         </div>
