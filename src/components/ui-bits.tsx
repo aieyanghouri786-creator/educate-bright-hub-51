@@ -21,11 +21,13 @@ export function PageHero({
   description: string;
 }) {
   return (
-    <section className="bg-hero-glow border-b border-border">
-      <div className="mx-auto max-w-5xl px-6 py-24 text-center md:py-32">
-        <SectionEyebrow>{eyebrow}</SectionEyebrow>
-        <h1 className="mt-6 text-5xl font-semibold tracking-tight md:text-6xl">{title}</h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">{description}</p>
+    <section className="relative overflow-hidden bg-hero-glow border-b border-border">
+      <div className="pointer-events-none absolute -top-24 -left-16 h-80 w-80 rounded-full bg-[color:var(--brand)]/20 blur-3xl animate-blob" />
+      <div className="pointer-events-none absolute top-10 right-0 h-80 w-80 rounded-full bg-[color:var(--ink)]/20 blur-3xl animate-blob delay-300" />
+      <div className="relative mx-auto max-w-5xl px-6 py-24 text-center md:py-32">
+        <div className="animate-fade-up"><SectionEyebrow>{eyebrow}</SectionEyebrow></div>
+        <h1 className="mt-6 text-5xl font-semibold tracking-tight md:text-6xl animate-fade-up delay-100">{title}</h1>
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground animate-fade-up delay-200">{description}</p>
       </div>
     </section>
   );
