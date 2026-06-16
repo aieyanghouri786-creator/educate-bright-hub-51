@@ -303,10 +303,13 @@ function Home() {
         <div className="max-w-2xl">
           <SectionEyebrow>Solutions</SectionEyebrow>
           <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-            Built for every kind of institution.
+            Built for every institution in Finland.
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            From a single neighborhood school to multi-campus universities, Smart Campuses adapts to your structure and pedagogy.
+            Choosing the right School Management System in Finland or University Management System
+            in Finland can transform how your institution operates. From a single neighborhood
+            school to multi-campus universities, Smart Campus adapts to your structure, scale
+            and pedagogy.
           </p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
