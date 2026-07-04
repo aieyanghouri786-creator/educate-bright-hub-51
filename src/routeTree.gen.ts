@@ -14,6 +14,7 @@ import { Route as SupportRouteImport } from './routes/support'
 import { Route as SolutionsRouteImport } from './routes/solutions'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as McpRouteImport } from './routes/mcp'
 import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as KnowledgeBaseRouteImport } from './routes/knowledge-base'
 import { Route as FeaturesRouteImport } from './routes/features'
@@ -71,6 +72,8 @@ import { Route as BlogEducationTechnologyRouteImport } from './routes/blog.educa
 import { Route as BlogDigitalTransformationInHigherEducationRouteImport } from './routes/blog.digital-transformation-in-higher-education'
 import { Route as BlogDigitalTransformationRouteImport } from './routes/blog.digital-transformation'
 import { Route as BlogChoosingAnLmsForYourCollegeRouteImport } from './routes/blog.choosing-an-lms-for-your-college'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as ProductsLmsVideoLearningRouteImport } from './routes/products.lms.video-learning'
 import { Route as ProductsLmsQuizzesRouteImport } from './routes/products.lms.quizzes'
 import { Route as ProductsLmsProgressTrackingRouteImport } from './routes/products.lms.progress-tracking'
@@ -102,6 +105,7 @@ import { Route as FeaturesParentPortalAttendanceRouteImport } from './routes/fea
 import { Route as FeaturesAnalyticsReportsRouteImport } from './routes/features.analytics.reports'
 import { Route as FeaturesAnalyticsKpisRouteImport } from './routes/features.analytics.kpis'
 import { Route as FeaturesAnalyticsInsightsRouteImport } from './routes/features.analytics.insights'
+import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
 const TestimonialsRoute = TestimonialsRouteImport.update({
   id: '/testimonials',
@@ -126,6 +130,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const PricingRoute = PricingRouteImport.update({
   id: '/pricing',
   path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LeadershipRoute = LeadershipRouteImport.update({
@@ -426,6 +435,18 @@ const BlogChoosingAnLmsForYourCollegeRoute =
     path: '/choosing-an-lms-for-your-college',
     getParentRoute: () => BlogRoute,
   } as any)
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char91DotmcpChar93ListToolsRoute =
+  Char91DotmcpChar93ListToolsRouteImport.update({
+    id: '/.mcp/list-tools',
+    path: '/.mcp/list-tools',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProductsLmsVideoLearningRoute =
   ProductsLmsVideoLearningRouteImport.update({
     id: '/video-learning',
@@ -600,6 +621,12 @@ const FeaturesAnalyticsInsightsRoute =
     path: '/insights',
     getParentRoute: () => FeaturesAnalyticsRoute,
   } as any)
+const Char91DotmcpChar93InvokeToolToolRoute =
+  Char91DotmcpChar93InvokeToolToolRouteImport.update({
+    id: '/.mcp/invoke-tool/$tool',
+    path: '/.mcp/invoke-tool/$tool',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -611,11 +638,14 @@ export interface FileRoutesByFullPath {
   '/features': typeof FeaturesRouteWithChildren
   '/knowledge-base': typeof KnowledgeBaseRouteWithChildren
   '/leadership': typeof LeadershipRoute
+  '/mcp': typeof McpRoute
   '/pricing': typeof PricingRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/solutions': typeof SolutionsRouteWithChildren
   '/support': typeof SupportRouteWithChildren
   '/testimonials': typeof TestimonialsRouteWithChildren
+  '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
+  '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/choosing-an-lms-for-your-college': typeof BlogChoosingAnLmsForYourCollegeRoute
   '/blog/digital-transformation': typeof BlogDigitalTransformationRoute
   '/blog/digital-transformation-in-higher-education': typeof BlogDigitalTransformationInHigherEducationRoute
@@ -664,6 +694,7 @@ export interface FileRoutesByFullPath {
   '/testimonials/colleges': typeof TestimonialsCollegesRoute
   '/testimonials/schools': typeof TestimonialsSchoolsRoute
   '/testimonials/universities': typeof TestimonialsUniversitiesRoute
+  '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/features/analytics/insights': typeof FeaturesAnalyticsInsightsRoute
   '/features/analytics/kpis': typeof FeaturesAnalyticsKpisRoute
   '/features/analytics/reports': typeof FeaturesAnalyticsReportsRoute
@@ -706,11 +737,14 @@ export interface FileRoutesByTo {
   '/features': typeof FeaturesRouteWithChildren
   '/knowledge-base': typeof KnowledgeBaseRouteWithChildren
   '/leadership': typeof LeadershipRoute
+  '/mcp': typeof McpRoute
   '/pricing': typeof PricingRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/solutions': typeof SolutionsRouteWithChildren
   '/support': typeof SupportRouteWithChildren
   '/testimonials': typeof TestimonialsRouteWithChildren
+  '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
+  '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/choosing-an-lms-for-your-college': typeof BlogChoosingAnLmsForYourCollegeRoute
   '/blog/digital-transformation': typeof BlogDigitalTransformationRoute
   '/blog/digital-transformation-in-higher-education': typeof BlogDigitalTransformationInHigherEducationRoute
@@ -759,6 +793,7 @@ export interface FileRoutesByTo {
   '/testimonials/colleges': typeof TestimonialsCollegesRoute
   '/testimonials/schools': typeof TestimonialsSchoolsRoute
   '/testimonials/universities': typeof TestimonialsUniversitiesRoute
+  '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/features/analytics/insights': typeof FeaturesAnalyticsInsightsRoute
   '/features/analytics/kpis': typeof FeaturesAnalyticsKpisRoute
   '/features/analytics/reports': typeof FeaturesAnalyticsReportsRoute
@@ -802,11 +837,14 @@ export interface FileRoutesById {
   '/features': typeof FeaturesRouteWithChildren
   '/knowledge-base': typeof KnowledgeBaseRouteWithChildren
   '/leadership': typeof LeadershipRoute
+  '/mcp': typeof McpRoute
   '/pricing': typeof PricingRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/solutions': typeof SolutionsRouteWithChildren
   '/support': typeof SupportRouteWithChildren
   '/testimonials': typeof TestimonialsRouteWithChildren
+  '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
+  '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/choosing-an-lms-for-your-college': typeof BlogChoosingAnLmsForYourCollegeRoute
   '/blog/digital-transformation': typeof BlogDigitalTransformationRoute
   '/blog/digital-transformation-in-higher-education': typeof BlogDigitalTransformationInHigherEducationRoute
@@ -855,6 +893,7 @@ export interface FileRoutesById {
   '/testimonials/colleges': typeof TestimonialsCollegesRoute
   '/testimonials/schools': typeof TestimonialsSchoolsRoute
   '/testimonials/universities': typeof TestimonialsUniversitiesRoute
+  '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/features/analytics/insights': typeof FeaturesAnalyticsInsightsRoute
   '/features/analytics/kpis': typeof FeaturesAnalyticsKpisRoute
   '/features/analytics/reports': typeof FeaturesAnalyticsReportsRoute
@@ -899,11 +938,14 @@ export interface FileRouteTypes {
     | '/features'
     | '/knowledge-base'
     | '/leadership'
+    | '/mcp'
     | '/pricing'
     | '/sitemap.xml'
     | '/solutions'
     | '/support'
     | '/testimonials'
+    | '/.mcp/list-tools'
+    | '/.well-known/oauth-protected-resource'
     | '/blog/choosing-an-lms-for-your-college'
     | '/blog/digital-transformation'
     | '/blog/digital-transformation-in-higher-education'
@@ -952,6 +994,7 @@ export interface FileRouteTypes {
     | '/testimonials/colleges'
     | '/testimonials/schools'
     | '/testimonials/universities'
+    | '/.mcp/invoke-tool/$tool'
     | '/features/analytics/insights'
     | '/features/analytics/kpis'
     | '/features/analytics/reports'
@@ -994,11 +1037,14 @@ export interface FileRouteTypes {
     | '/features'
     | '/knowledge-base'
     | '/leadership'
+    | '/mcp'
     | '/pricing'
     | '/sitemap.xml'
     | '/solutions'
     | '/support'
     | '/testimonials'
+    | '/.mcp/list-tools'
+    | '/.well-known/oauth-protected-resource'
     | '/blog/choosing-an-lms-for-your-college'
     | '/blog/digital-transformation'
     | '/blog/digital-transformation-in-higher-education'
@@ -1047,6 +1093,7 @@ export interface FileRouteTypes {
     | '/testimonials/colleges'
     | '/testimonials/schools'
     | '/testimonials/universities'
+    | '/.mcp/invoke-tool/$tool'
     | '/features/analytics/insights'
     | '/features/analytics/kpis'
     | '/features/analytics/reports'
@@ -1089,11 +1136,14 @@ export interface FileRouteTypes {
     | '/features'
     | '/knowledge-base'
     | '/leadership'
+    | '/mcp'
     | '/pricing'
     | '/sitemap.xml'
     | '/solutions'
     | '/support'
     | '/testimonials'
+    | '/.mcp/list-tools'
+    | '/.well-known/oauth-protected-resource'
     | '/blog/choosing-an-lms-for-your-college'
     | '/blog/digital-transformation'
     | '/blog/digital-transformation-in-higher-education'
@@ -1142,6 +1192,7 @@ export interface FileRouteTypes {
     | '/testimonials/colleges'
     | '/testimonials/schools'
     | '/testimonials/universities'
+    | '/.mcp/invoke-tool/$tool'
     | '/features/analytics/insights'
     | '/features/analytics/kpis'
     | '/features/analytics/reports'
@@ -1185,11 +1236,14 @@ export interface RootRouteChildren {
   FeaturesRoute: typeof FeaturesRouteWithChildren
   KnowledgeBaseRoute: typeof KnowledgeBaseRouteWithChildren
   LeadershipRoute: typeof LeadershipRoute
+  McpRoute: typeof McpRoute
   PricingRoute: typeof PricingRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SolutionsRoute: typeof SolutionsRouteWithChildren
   SupportRoute: typeof SupportRouteWithChildren
   TestimonialsRoute: typeof TestimonialsRouteWithChildren
+  Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
+  Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   LegalCookiePolicyRoute: typeof LegalCookiePolicyRoute
   LegalDataSecurityRoute: typeof LegalDataSecurityRoute
   LegalPrivacyRoute: typeof LegalPrivacyRoute
@@ -1197,6 +1251,7 @@ export interface RootRouteChildren {
   LegalTermsRoute: typeof LegalTermsRoute
   ProductsErpRoute: typeof ProductsErpRouteWithChildren
   ProductsLmsRoute: typeof ProductsLmsRouteWithChildren
+  Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1234,6 +1289,13 @@ declare module '@tanstack/react-router' {
       path: '/pricing'
       fullPath: '/pricing'
       preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/leadership': {
@@ -1635,6 +1697,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogChoosingAnLmsForYourCollegeRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.mcp/list-tools': {
+      id: '/.mcp/list-tools'
+      path: '/.mcp/list-tools'
+      fullPath: '/.mcp/list-tools'
+      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products/lms/video-learning': {
       id: '/products/lms/video-learning'
       path: '/video-learning'
@@ -1851,6 +1927,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/features/analytics/insights'
       preLoaderRoute: typeof FeaturesAnalyticsInsightsRouteImport
       parentRoute: typeof FeaturesAnalyticsRoute
+    }
+    '/.mcp/invoke-tool/$tool': {
+      id: '/.mcp/invoke-tool/$tool'
+      path: '/.mcp/invoke-tool/$tool'
+      fullPath: '/.mcp/invoke-tool/$tool'
+      preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
+      parentRoute: typeof rootRouteImport
     }
   }
 }
@@ -2173,11 +2256,15 @@ const rootRouteChildren: RootRouteChildren = {
   FeaturesRoute: FeaturesRouteWithChildren,
   KnowledgeBaseRoute: KnowledgeBaseRouteWithChildren,
   LeadershipRoute: LeadershipRoute,
+  McpRoute: McpRoute,
   PricingRoute: PricingRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SolutionsRoute: SolutionsRouteWithChildren,
   SupportRoute: SupportRouteWithChildren,
   TestimonialsRoute: TestimonialsRouteWithChildren,
+  Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
+  Char91DotwellKnownChar93OauthProtectedResourceRoute:
+    Char91DotwellKnownChar93OauthProtectedResourceRoute,
   LegalCookiePolicyRoute: LegalCookiePolicyRoute,
   LegalDataSecurityRoute: LegalDataSecurityRoute,
   LegalPrivacyRoute: LegalPrivacyRoute,
@@ -2185,6 +2272,7 @@ const rootRouteChildren: RootRouteChildren = {
   LegalTermsRoute: LegalTermsRoute,
   ProductsErpRoute: ProductsErpRouteWithChildren,
   ProductsLmsRoute: ProductsLmsRouteWithChildren,
+  Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
