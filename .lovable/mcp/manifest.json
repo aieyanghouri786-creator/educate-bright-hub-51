@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "smart-campuses-mcp",
+      "version": "0.1.0",
+      "title": "Smart Campuses MCP"
+    },
+    "tools": [
+      {
+        "name": "list_features",
+        "title": "List product features",
+        "description": "List Smart Campuses ERP & LMS product features, optionally filtered by a keyword.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "query": {
+              "description": "Optional keyword to filter feature name or description.",
+              "type": "string"
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_solutions",
+        "title": "List solutions by institution type",
+        "description": "List Smart Campuses solutions tailored to different institution types.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "institutionType": {
+              "description": "Optional filter, e.g. 'school', 'university'.",
+              "type": "string"
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "request_demo_link",
+        "title": "Get demo request link",
+        "description": "Return the URL where a prospect can schedule a Smart Campuses product demo.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "institution": {
+              "description": "Optional institution name for context.",
+              "type": "string"
+            }
+          }
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
